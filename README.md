@@ -1,17 +1,20 @@
 # Projekt
-Pri predmetu Programiranje 1 bom za projekt analizirala podatke z Amazona. Izbrala bom nekaj izdelkov iz različnih kategorij in primerjala njihovo povprečno oceno uporabnikov ter njihovo ceno.
-
-Analizirala bom 1000 artiklov s podano oceno uporabnikov iz kategorij:
-- slušalke,
-- stoli,
-- nega las in
-- filmi.
+Pri predmetu Programiranje 1 bom za projekt analizirala podatke z Okusno.je. Zbrala bom podatke receptov iz kategorij:
+- Juhe
+- Meso
+- Zelenjava
+- Solate
+- Sladice in peciva
 
 Zajela bompodatke o:
-- imenu artikla
-- povprečni oceni artikla
-- ceni artikla.
+- imenu jedi,
+- številu komentarjev,
+- zahtevnosti priprave,
+- potrebnem času za pripravo,
+- sestavinah,
+- navodilih za pripravo,
+- energijski vrednosti in vsebnosti osnovnih vrst hranil.
 
 Delovne hipoteze:
-- Ali obstaja povezava med ceno izdelka in povprečno oceno uporabnika?
-- Ali je dolžina imena izdelka kako povezana z njegovo ceno?
+- Kakšna je povezava med zahtevnostjo priprave in dolžino navodil in časom priprave in številom različnih sestavin?
+- Ali imajo jedi, ki večinsko vsebujejo iste sestavine podobne energijske vrednosti?
