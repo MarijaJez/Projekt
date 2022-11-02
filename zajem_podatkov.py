@@ -6,13 +6,14 @@ from csv import writer
 from csv import reader
 import pandas as pd
 
+kategorija = "juha"
 juhe_zacetna_stran_url = 'https://www.kulinarika.net/recepti/seznam/juhe-in-zakuhe/?offset=0'
-direktorij_glavne_strani = 'html_nizi'
-juhe_glavna_stran = 'juhe.html'
+direktorij_glavne_strani = 'html_nizi\\juhe_glavne_strani'
 ime_csv_datoteke = 'podatki.csv'
 direktorij_podstrani_juhe = 'html_nizi\\juhe_podstrani'
 csv_sestavine = 'sestavine.csv'
 csv_postopki = 'postopki.csv'
+st_strani = 3
 
 def vsebina_url_kot_niz(url):
     """Funkcija kot argument sprejme niz in poskusi vrniti vsebino te spletne
@@ -45,6 +46,10 @@ def shrani_stran(url, direktorij, ime_datoteke):
     "directory"/"filename"."""
     shrani_niz_v_datoteko(vsebina_url_kot_niz(url), direktorij, ime_datoteke)
 
+def shrani_strani(direktorij, st_strani):
+    url = f'https://www.kulinarika.net/recepti/seznam/juhe-in-zakuhe/?offset={(st_strani - 1) * 20 + 1}'
+    ime_datoteke = 'juhe-{}.html'.format(st_strani)
+    shrani_stran(url, direktorij, ime_datoteke)
 
 def preberi_dat_kot_niz(direktorij, ime_datoteke):
     """Funkcija vrne celotno vsebino datoteke "directory"/"filename" kot niz."""
@@ -62,9 +67,21 @@ def seznam_receptov_na_strani(vsebina_strani):
 def slovar_iz_recepta_gl_str(block):
     """Funkcija iz niza za posamezen recept izlušči podatke o imenu jedi, avtorju, oceni, času priprave in 
     povezavi do strani recepta ter vrne slovar, ki vsebuje ustrezne podatke."""
-    objekt = re.compile(r"""<a href=(?P<povezava>.*?)>(?P<ime>.*?)</a></h3>.*<a class='username'.*?>(?P<avtor>.*?)</a>.*<span class='cas'>(?P<cas_priprave>.*?)</span>""",
+    objekt = re.compile(r"""<a href=(?P<povezava>.*?)>(?P<ime>.*?)</a></h3>.*""",
                         re.DOTALL)
     slovar = re.search(objekt, block).groupdict()
+    vzorec_avtor = r"<a class='username'.*?>(?P<avtor>.*?)</a>"
+    avtor = re.search(vzorec_avtor, block)
+    if avtor is not None:
+        slovar['avtor'] = avtor.group('avtor')
+    else:
+        slovar['avtor'] = 'Unknown'
+    vzorec_cas = r"<span class='cas'>(?P<cas_priprave>.*?)</span>"
+    cas = re.search(vzorec_cas, block)
+    if cas is not None:
+        slovar['cas_priprave'] = cas.group('cas_priprave')
+    else:
+        slovar['cas_priprave'] = 'Unknown'
     vzorec_ocena = r'<img alt="Povprečna ocena recepta: (?P<ocena>.*?)".*<p class="cas">'
     ocene = re.search(vzorec_ocena, block)
     if ocene is not None:
@@ -126,20 +143,11 @@ def zapisi_recepte_v_csv(recepti, ime_datoteke):
     izdelaj_csv(recepti[0].keys(), recepti, ime_datoteke)
 
 
-def dodaj_indekse(ime_datoteke):
+def dodaj_indekse_in_kategorijo(ime_datoteke, kategorija):
     """Funkcija podatkom v csv datoteki doda še en stolpec indeksov."""
     data_new = pd.read_csv(ime_datoteke)
-    # data_new['indeks'] = range(len(data_new))
+    data_new['kategorija'] = kategorija
     data_new.to_csv('podatki_z_indeksi.csv')
-    # with open(ime_datoteke, 'r') as read_obj:
-    #         with open('output_1.csv', 'w', newline='') as write_obj:
-    #             csv_reader = reader(read_obj)
-    #             csv_writer = writer(write_obj)
-    #             i = 0
-    #             for row in csv_reader:
-    #                 row.append(i)
-    #                 csv_writer.writerow(row)
-    #                 i += 1
 
 
 def main(redownload=True, reparse=True):
@@ -149,17 +157,20 @@ def main(redownload=True, reparse=True):
     3. Podatke shrani v csv datoteko
     """
     # Najprej v lokalno datoteko shranimo glavno stran
-    shrani_stran(juhe_zacetna_stran_url, direktorij_glavne_strani, juhe_glavna_stran)
+    recepti = []
+    for i in range(st_strani):
+        shrani_strani(direktorij_glavne_strani, i)
 
     # Iz lokalne (html) datoteke preberemo podatke
-    recepti = seznam_receptov_na_strani(preberi_dat_kot_niz(direktorij_glavne_strani, juhe_glavna_stran))
+        recepti_str = seznam_receptov_na_strani(preberi_dat_kot_niz(direktorij_glavne_strani, f'juhe-{i}.html'))
+        recepti += recepti_str
 
     # Podatke preberemo v lepšo obliko (seznam slovarjev)
     recepti_sez = [slovar_iz_recepta_gl_str(recept) for recept in recepti]
     
     # Podatke shranimo v csv datoteko
     zapisi_recepte_v_csv(recepti_sez, ime_csv_datoteke)
-    dodaj_indekse(ime_csv_datoteke)
+    dodaj_indekse(ime_csv_datoteke, kategorija)
     # Dodatno: S pomočjo parametrov funkcije main omogoči nadzor, ali se
     # celotna spletna stran ob vsakem zagon prenese (četudi že obstaja)
     # in enako za pretvorbo
