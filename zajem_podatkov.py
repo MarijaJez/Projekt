@@ -2,11 +2,17 @@ import requests
 import os
 import re
 import csv
+from csv import writer
+from csv import reader
+import pandas as pd
 
-juhe_zacetna_stran_url = 'https://www.kulinarika.net/recepti/seznam/juhe-in-zakuhe/'
-direktorij = 'html_nizi'
+juhe_zacetna_stran_url = 'https://www.kulinarika.net/recepti/seznam/juhe-in-zakuhe/?offset=0'
+direktorij_glavne_strani = 'html_nizi'
 juhe_glavna_stran = 'juhe.html'
 ime_csv_datoteke = 'podatki.csv'
+direktorij_podstrani_juhe = 'html_nizi\\juhe_podstrani'
+csv_sestavine = 'sestavine.csv'
+csv_postopki = 'postopki.csv'
 
 def vsebina_url_kot_niz(url):
     """Funkcija kot argument sprejme niz in poskusi vrniti vsebino te spletne
@@ -34,7 +40,7 @@ def shrani_niz_v_datoteko(niz, direktorij, ime_datoteke):
         file_out.write(niz)
     return None
 
-def shrani_zacetno_stran(url, direktorij, ime_datoteke):
+def shrani_stran(url, direktorij, ime_datoteke):
     """Funkcija shrani vsebino spletne strani na naslovu "page" v datoteko
     "directory"/"filename"."""
     shrani_niz_v_datoteko(vsebina_url_kot_niz(url), direktorij, ime_datoteke)
@@ -72,20 +78,44 @@ def podatki_o_receptu_iz_datoteke(ime_datoteke, direktorij):
     pretvori (razčleni) v pripadajoč seznam slovarjev za vsak recept posebej."""
     seznam = []
     for recept in seznam_receptov_na_strani(preberi_dat_kot_niz(ime_datoteke, direktorij)):
-        seznam.append(slovar_iz_recepta_gl_str(recept))
+        seznam.append(slovar_iz_recepta_gl_str(recept)) 
     return seznam
 
 
 def izdelaj_csv(kljuci, recepti, ime_datoteke):
     """
-    Funkcija v csv datoteko podano s parametroma "directory"/"filename" zapiše
-    vrednosti v parametru "rows" pripadajoče ključem podanim v "fieldnames"
+    Funkcija v csv datoteko podano s parametrom "ime_datoteke" zapiše
+    vrednosti v parametru "recepti" pripadajoče ključem podanim v "kljuci"
     """
     with open(ime_datoteke, 'w', encoding='utf-8') as d:
         writer = csv.DictWriter(d, fieldnames=kljuci)
         writer.writeheader()
         for recept in recepti:
             writer.writerow(recept)
+    return
+
+def izdelaj_csv_sestavine(indeks_recepta, sestavine, ime_datoteke):
+    """
+    Funkcija v csv datoteko podano s parametrom "ime_datoteke" zapiše
+    vrednosti v parametru "recepti" pripadajoče ključem podanim v "kljuci"
+    """
+    with open(ime_datoteke, 'a', encoding='utf-8') as d:
+        writer = csv.DictWriter(d, fieldnames=['indeks', 'količina', 'sestavina'])
+        for sestavina in sestavine:
+            sestavina_slovar = {'indeks': indeks_recepta, 'količina': sestavina[0], 'sestavina': sestavina[1]}
+            writer.writerow(sestavina_slovar)
+    return
+
+def izdelaj_csv_postopki(indeks_recepta, postopek, ime_datoteke):
+    """
+    Funkcija v csv datoteko podano s parametrom "ime_datoteke" zapiše
+    vrednosti v parametru "recepti" pripadajoče ključem podanim v "kljuci"
+    """
+    with open(ime_datoteke, 'a', encoding='utf-8') as d:
+        writer = csv.DictWriter(d, fieldnames=['indeks', 'korak', 'navodila'])
+        for korak in postopek:
+            sestavina_slovar = {'indeks': indeks_recepta, 'korak': korak[0], 'navodila': korak[1]}
+            writer.writerow(sestavina_slovar)
     return
 
 def zapisi_recepte_v_csv(recepti, ime_datoteke):
@@ -96,6 +126,22 @@ def zapisi_recepte_v_csv(recepti, ime_datoteke):
     izdelaj_csv(recepti[0].keys(), recepti, ime_datoteke)
 
 
+def dodaj_indekse(ime_datoteke):
+    """Funkcija podatkom v csv datoteki doda še en stolpec indeksov."""
+    data_new = pd.read_csv(ime_datoteke)
+    # data_new['indeks'] = range(len(data_new))
+    data_new.to_csv('podatki_z_indeksi.csv')
+    # with open(ime_datoteke, 'r') as read_obj:
+    #         with open('output_1.csv', 'w', newline='') as write_obj:
+    #             csv_reader = reader(read_obj)
+    #             csv_writer = writer(write_obj)
+    #             i = 0
+    #             for row in csv_reader:
+    #                 row.append(i)
+    #                 csv_writer.writerow(row)
+    #                 i += 1
+
+
 def main(redownload=True, reparse=True):
     """Funkcija izvede celoten del pridobivanja podatkov:
     1. Recepte prenese iz Kulinarike
@@ -103,21 +149,63 @@ def main(redownload=True, reparse=True):
     3. Podatke shrani v csv datoteko
     """
     # Najprej v lokalno datoteko shranimo glavno stran
-    shrani_zacetno_stran(juhe_zacetna_stran_url, direktorij, juhe_glavna_stran)
+    shrani_stran(juhe_zacetna_stran_url, direktorij_glavne_strani, juhe_glavna_stran)
 
     # Iz lokalne (html) datoteke preberemo podatke
-    recepti = seznam_receptov_na_strani(preberi_dat_kot_niz(direktorij, juhe_glavna_stran))
+    recepti = seznam_receptov_na_strani(preberi_dat_kot_niz(direktorij_glavne_strani, juhe_glavna_stran))
 
     # Podatke preberemo v lepšo obliko (seznam slovarjev)
     recepti_sez = [slovar_iz_recepta_gl_str(recept) for recept in recepti]
     
     # Podatke shranimo v csv datoteko
     zapisi_recepte_v_csv(recepti_sez, ime_csv_datoteke)
+    dodaj_indekse(ime_csv_datoteke)
     # Dodatno: S pomočjo parametrov funkcije main omogoči nadzor, ali se
     # celotna spletna stran ob vsakem zagon prenese (četudi že obstaja)
     # in enako za pretvorbo
 
 
+def shrani_podstrani(podatki, direktorij):
+    """Funkcija shrani v datoteko direktorij/ime_datoteke html vseh podstrani glavne strani, 
+    katerih url-ji so v datoteki s podatki."""
+    recepti = pd.read_csv(podatki)
+    for i, url in enumerate(recepti['povezava']):
+        shrani_stran("https://www.kulinarika.net/" + url[1:-1], direktorij, str(i) + ".html")
+
+def podatki_o_receptu_iz_podstrani(direktorij, podstran):
+    """Funkcija iz html-ja podstrani izlušči podatke o sestavinah, potrebnih za pripravo jedi in 
+    postopku priprave ter jih shrani v ločene csv datoteke."""
+    indeks = podstran.split('.')[0]
+    podstran = preberi_dat_kot_niz(direktorij, podstran)
+    sestavina = re.compile(r"""<p class="cf" itemprop="recipeIngredient"><span class="label">(?P<kolicina>.*?)</span><span class="label-value">(?P<sestavina>.*?)</span></p>""",
+                        re.DOTALL)
+    sestavine = re.findall(sestavina, podstran)
+    korak = re.compile(r"""<p class="cf en_korak_postopek" itemprop="recipeInstructions"><span class="label">(?P<korak>.*?) </span><span class="data">(?P<postopek>.*?)</span></p>""",
+                        re.DOTALL)
+    postopek = re.findall(korak, podstran)
+    
+    return indeks, sestavine, postopek
+
+def shrani_podatke_iz_podstrani(direktorij, podstran, ime_datoteke_sestavine, ime_datoteke_postopki):
+    """Funkcija shrani podatke o sestavinah iz strani na 'direktorij'/'podstran' v datoteko 
+    'ime_datoteke_sestavine' in podatke o postopkih iz strani na 'direktorij'/'podstran' v 
+    datoteko 'ime_datoteke_postopki'."""
+    indeks, sestavine, postopek = podatki_o_receptu_iz_podstrani(direktorij, podstran)
+    izdelaj_csv_sestavine(indeks, sestavine, ime_datoteke_sestavine)
+    izdelaj_csv_postopki(indeks, postopek, ime_datoteke_postopki)
+
+
+def main2():
+    """Funkcija shrani htmlje vseh podstrani na povezavah v datoteki juhe.html in iz njih zajame
+    podatke o sestavinah in postopkih, ki jh skrani v svoji 2 csv datoteki."""
+    shrani_podstrani(ime_csv_datoteke, direktorij_podstrani_juhe)
+
+    dirs = os.listdir(direktorij_podstrani_juhe)
+    for datoteka in dirs:
+        shrani_podatke_iz_podstrani(direktorij_podstrani_juhe, datoteka, csv_sestavine, csv_postopki)
+
+
 if __name__ == '__main__':
     main()
+    main2()
 
