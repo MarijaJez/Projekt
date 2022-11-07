@@ -1,0 +1,1358 @@
+
+
+
+<!doctype html>
+<html lang="sl"><!-- InstanceBegin template="/Templates/ogrodje3.dwt.asp" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/css/normalize.css" rel="stylesheet" type="text/css">
+<link href="/css/skupaj-css.css?rel=4.0502524229315" rel="stylesheet" type="text/css">
+<link href="/stiliprint.css" rel="stylesheet" type="text/css" media="print">
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,400i,600&display=swap' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="/css/flickity.css" media="screen">
+
+<script src="/js/lazysizes.min.js" async=""></script>
+<link href="/css/new-responsive.css?v=1.03" rel="stylesheet" type="text/css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/grafika6/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/grafika6/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/grafika6/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/grafika6/favicons/manifest.json">
+<link rel="mask-icon" href="/grafika6/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/grafika6/favicons/favicon.ico">
+<meta name="msapplication-config" content="/grafika6/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:locale" content="sl_SI">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kulinarika.net">
+<meta property="fb:app_id" content="182018238801081">
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Kulinarika.net",
+  "url": "http://www.kulinarika.net",
+  "image": "http://www.kulinarika.net/grafika6/logotipi/logo4.png",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.kulinarika.net/iskanje/?splosno_besede={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+
+</script>
+
+<link href='/css/recepti.css?v=4.0502524229315' rel='stylesheet' type='text/css'>
+<!-- InstanceBeginEditable name="stili" -->
+
+<!-- InstanceEndEditable -->
+
+
+<script>
+
+	
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15823371-4', {'storage': 'none', 'clientId': 'c6c939c3f421a47cfaf5d19505e23a7a'});
+  ga('require', 'linkid', 'linkid.js');
+  ga('require', 'displayfeatures');
+
+	
+	// Creates an adblock detection plugin.
+	ga('provide', 'adblockTracker', function(tracker, opts) {
+	  var ad = document.createElement('ins');
+	  ad.className = 'AdSense';
+	  ad.style.display = 'block';
+	  ad.style.position = 'absolute';
+	  ad.style.top = '-1px';
+	  ad.style.height = '1px';
+	  document.body.appendChild(ad);
+	  tracker.set('dimension' + opts.dimensionIndex, !ad.clientHeight);
+	  document.body.removeChild(ad);
+	});
+	
+	ga('require', 'adblockTracker', {dimensionIndex: 1});
+    ga('send', 'pageview'), {'anonymizeIp': true};
+  
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3MTV8XXHPL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3MTV8XXHPL');
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script>
+
+<!--    -->
+
+
+
+<script data-ad-client="ca-pub-3352501607232481" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+
+
+
+
+$(function(){
+	$('#menu .main-menu #menu02').addClass("selected");
+	
+		if (!isMobile) {
+			$( "#zid-include" ).load( "/inc/ajax-funkcije.asp?akcija=zid-include&Menu=0202&sponzor=1", function() {
+			console.log( "Load was performed." );
+			});
+		}
+	
+	$('.mobileslider').css('visibility', 'visible');
+	
+	enquire.register("screen and (max-width: 768px)", {
+    match : function() {
+		
+			$('#glavni_menu').prop('id', 'glavni_menu_small').appendTo($('#glavni_menu_small_container'));
+		   
+		   $('#header-glava').prop('class', 'small');
+		   $('#main-kulslo-logo').prependTo($('#header-glava'));
+		   $('#kuverta-pismo').insertBefore($('#glavaPasica'));
+		   //$('#info-praznik').prependTo($('.main-left'))
+
+		 
+    },
+	
+	 unmatch : function() {
+	  $('#main-kulslo-logo').prependTo($('#glava_main .glava'));
+      $('#glavni_menu_small').prop('id', 'glavni_menu').appendTo($('#glava_velika'));
+	  $('#header-glava').prop('class', '');
+	  
+	  $('#kuverta-pismo').prependTo($('#prijava-menu'));
+	  
+
+ 		}
+	});
+	
+	
+})
+
+  $(window).on('load resize', function() {
+
+
+	$(".spinner-container").delay(100).fadeOut(600).remove();
+	
+	
+	
+})
+
+jQuery.uaMatch = function( ua ) {
+        ua = ua.toLowerCase();
+
+        var match = /(chrome)[ /]([w.]+)/.exec( ua ) ||
+                /(webkit)[ /]([w.]+)/.exec( ua ) ||
+                /(opera)(?:.*version|)[ /]([w.]+)/.exec( ua ) ||
+                /(msie) ([w.]+)/.exec( ua ) ||
+                ua.indexOf("compatible") < 0 && /(mozilla)(?:.*? rv:([w.]+)|)/.exec( ua ) ||
+                [];
+
+        return {
+                browser: match[ 1 ] || "",
+                version: match[ 2 ] || "0"
+        };
+};
+
+// Don't clobber any existing jQuery.browser in case it's different
+if ( !jQuery.browser ) {
+        matched = jQuery.uaMatch( navigator.userAgent );
+        browser = {};
+
+        if ( matched.browser ) {
+                browser[ matched.browser ] = true;
+                browser.version = matched.version;
+        }
+
+        // Chrome is Webkit, but Webkit is also Safari.
+        if ( browser.chrome ) {
+                browser.webkit = true;
+        } else if ( browser.webkit ) {
+                browser.safari = true;
+        }
+
+        jQuery.browser = browser;
+}
+
+
+
+
+</script>
+
+<script src="/js/funkcije-skupaj.js?v=1.043218"></script>
+
+<script src="/js/flickity.min.js?v=1.043218"></script>
+
+<script src="/js/new-responsive.js?v=1.043218"></script>
+ <script src="/js/jquery.cookiecuttr.js"></script>
+<script >
+$(document).ready(function () {
+	// activate cookie cutter
+    $.cookieCuttr({
+		cookieAnalytics:false,
+		cookieCutter: true,
+		
+    	cookieDeclineButton: false,
+		cookieOverlayEnabled:true,
+		
+		cookieDisable: '.piskotki',
+		cookieDomain: 'kulinarika.net',
+		cookieNotificationLocationBottom: false,
+		cookieWhatAreTheyLink:'/zasebnost/',
+		cookiePolicyLink: '/zasebnost/'
+    });
+}); 	
+</script>
+
+<!-- InstanceBeginEditable name="napis" -->
+<!--<link href="/css/ajax-dynamic-list.css" rel="stylesheet" type="text/css" /> -->
+
+<meta name="robots" content="index,follow">
+<title>Recept: Cmočki šarenke v žametni bučni juhi - Kulinarika.net</title>
+
+<link rel='canonical' href='https://www.kulinarika.net/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/'>
+<meta name="Description" content="aromatična bučna juha z ribjimi cmoki">
+<meta name="Keywords" content="juhe">
+
+
+<meta property="og:title" content="Recept: Cmočki šarenke v žametni bučni juhi - Kulinarika.net">
+<meta property="og:description" content="aromatična bučna juha z ribjimi cmoki">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.kulinarika.net/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/">
+<meta property='og:image' content='https://www.kulinarika.net/slikerecepti/21290/1.jpg?0.7055475'><meta property='og:image:type' content='image/jpeg'>
+
+
+<script src="/js/mnenja.js"></script>
+<script  src="/js/knjiga.js"></script>
+<link href="/p7epm/epm5/p7EPM05.css" rel="stylesheet" type="text/css" media="all">
+<script src="/p7epm/p7EPMscripts.js"></script>
+<script >
+
+	if (isMobile) 
+	{
+		var head = document.getElementsByTagName('head')[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = '/js/nosleep.min.js';
+		head.appendChild(script);
+		
+	}
+
+
+</script>
+  <link href="/css/venobox/venobox.css?v=4.0502524229315" type="text/css" rel="stylesheet">
+  <script src="/js/jquery.venobox.js?v=1.043218" ></script>
+ <link href="/css/slider-pro.min.css?v=4.0502524229315" type="text/css" rel="stylesheet">
+ <script src="/js/jquery.sliderpro.min.js?v=1.043218"></script> 
+  <script type="application/ld+json">
+    {
+     "@context": "http://schema.org",
+     "@type": "BreadcrumbList",
+     "itemListElement":
+     [
+      {
+       "@type": "ListItem",
+       "position": 1,
+	   "item": 
+	   {
+		  "name": "portal",
+		  "@id": "https://www.kulinarika.net"
+		}
+      },
+      {
+       "@type": "ListItem",
+      "position": 2,
+      "item": {
+			"name": "recepti",
+			"@id": "/recepti/"
+      }
+	  }
+	  ,
+	  {
+       "@type": "ListItem",
+      "position": 3,
+
+      "item": 
+	  {
+		  "name": "juhe in zakuhe",
+		  "@id": "/recepti/seznam/juhe-in-zakuhe/"
+      }
+	  }
+	  
+	  ,
+	  {
+       "@type": "ListItem",
+      "position": 4,
+      "item": 
+	  {
+		 "name": "ostale juhe",
+		 "@id": "/recepti/seznam/juhe-in-zakuhe/ostale-juhe/"
+	  }
+      }
+	  
+	  ,
+	  {
+       "@type": "ListItem",
+      "position": 5,
+      "item": 
+	  {
+		 "name": "Cmočki šarenke v žametni bučni juhi",
+		 "@id": "/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/"
+	  }
+      }
+     ]
+    }
+	</script>
+   
+
+<script>
+//<![CDATA[
+hs.preserveContent = false;
+
+$(window).on('load resize', function(){
+	
+	if ($(window).width() <= 500) {
+	//$('#oglasi-stranski').insertAfter($('#receptSestavine'));
+  } else {
+    //$('#oglasi-stranski').insertAfter($('.info-kuha'));
+  }
+	
+})
+
+$(document).on({
+		click: function(){
+			var IDMnenje = $(this).data('id');
+			$(this).prev('.like-stevilo').load("/inc/ajax-funkcije.asp?akcija=like_add_delete&s=1&IDMnenje=" + IDMnenje + "&rand=" + Math.round(new Date().getTime()/1000), function() {
+				//reFacebook();
+				$(this).parent().children('.likes-holder').toggleClass('on');
+				});
+		}
+	},
+ 	'div.likes a.likes-holder');
+
+$(document).on({
+		click: function(){
+		event.preventDefault();
+			$.ajax({
+				type: "get",
+				url: "/inc/ajax-funkcije.asp?akcija=recepti_priljubljeni",
+				data: {
+					id: 21290,
+					rand: Math.round(new Date().getTime()/1000)
+				},
+				success: function(response) {
+					if (response==0) {
+						$('#priljubljeni-recept img').attr('src', '/grafika7/icon-heart-off.svg');
+						$('#zabelezka').removeClass('show').addClass('hide');
+					}
+					else
+					{
+						$('#priljubljeni-recept img').attr('src', '/grafika7/icon-heart-on.svg');
+						$('#zabelezka').removeClass('hide').addClass('show');
+					}
+				}
+			})
+		}
+	},
+ 	'#priljubljeni-recept');
+
+
+
+$(document).ready(function() {
+
+	/* Preoader */
+
+	function loadingStart(dividor) {
+		$("#" + dividor).show();	
+	}
+
+	function loadingStop(dividor) {
+		$("#" + dividor).hide();	
+	}
+
+	if (isMobile) {
+	
+		var noSleep = new NoSleep();
+		
+		
+		
+		$('#zaslon .toggle-checkbox').on('click', function() {
+		
+			
+			varState=$('.toggle-checkbox').is(':checked');
+			
+			// Klik se izvrši 2x (label for in input, zato preveri ravno obratno stanje, kot je :-)
+			if (!varState) {
+				// daj na off
+				noSleep.disable();
+				$('.toggle-checkbox').prop('checked', false);
+
+				$("#sestavine p:not('.empty,.poglavje') .input-narejeno").remove();
+				$("#sestavine p:not('.empty,.poglavje')").removeClass("narejeno");
+				$("#sestavine span.label").removeClass("narejeno");
+				$("#sestavine span.label-value").removeClass("narejeno");	
+
+				$("#postopek").removeClass("naredi");
+				$("#postopek p:not('.edini_korak_postopek') .input-narejeno").remove();
+				$("#postopek p:not('.edini_korak_postopek') .data").removeClass("narejeno");
+				$("#postopek p:not('.edini_korak_postopek')").removeClass("narejeno");
+				
+				$("ul.priljubljeni").removeClass("hide");
+				$("#oglasi-stranski").removeClass("hide");
+			
+			} else {
+				noSleep.enable();
+				$('.toggle-checkbox').prop('checked', true);
+				$("#sestavine p:not('.empty,.poglavje') .label-value").prepend(function(index, htmlContent) {return "<span class='input-narejeno'><input type='checkbox' class='style1 semzenaredil' name='semzenaredil' id='sestavina"+ index +"' /><label for='sestavina"+ index +"'>&nbsp;</label></span>"});
+				$("#sestavine span.label").addClass("narejeno");
+				$("#sestavine span.label-value").addClass("narejeno");
+				
+				$("#postopek").addClass("naredi");
+				$("#postopek p:not('.edini_korak_postopek') .data").prepend(function(index, htmlContent) {return "<span class='input-narejeno'><input type='checkbox' class='style1 semzenaredil' name='semzenaredil' id='postopek"+ index +"' /><label for='postopek"+ index +"'>&nbsp;</label></span>"});		
+				$("#postopek p:not('.edini_korak_postopek') .data").addClass("narejeno");
+				$("ul.priljubljeni").addClass("hide");
+				$("#oglasi-stranski").addClass("hide");
+			};
+
+		
+		});
+	
+		$('#zaslon').removeClass('hide_important');
+		
+	};
+	
+	$(document).on('click', '.semzenaredil', function() {
+		
+		varState=$(this).is(':checked');
+		
+		if (varState) {
+		
+			$(this).parent().parent().parent().addClass('narejeno');
+			
+		} else {
+			$(this).parent().parent().parent().removeClass('narejeno');
+			$(this).blur();
+		}
+	})
+		
+
+	$('.venobox').venobox(); 
+
+	$(document).on('click', 'img.figlio', function(e){
+        $('.vbox-close').click();
+    });
+	
+	$('.odpirac-dodaj-zabelezko').venobox({
+		post_close_callback: function(event){
+			window.location.reload()
+		}
+   		 });
+		
+
+	
+	$('#popup-oceneseznam-holder').venobox();
+	$('#popup-zanimivosti-holder').venobox();
+	$('#popup-prispevaj-holder').venobox();
+		
+	
+	
+	
+
+	$('#popup-ocene-holder').bind('click', function () {
+		return hs.htmlExpand(this, { width:385, height: 173, contentId: 'popup-ocene', objectType: 'iframe', preserveContent: false} )
+	})
+
+
+
+	$('#TekneIDSubmit').bind('click', function() {
+		loadingStart("loadingRecipeID");
+		$('#recipename').load('/inc/ajax-checkrecipename.asp?akcija=priporocilo&IDRecept=21290&ID=' + $('#TekneID').val(), function() {
+			loadingStop("loadingRecipeID");
+			});
+	})
+	
+	$('#TekneNameSubmit').bind('click', function() {
+		loadingStart("loadingRecipeName");
+		$('#recipename2').load('/inc/ajax-checkrecipename.asp?akcija=priporocilo&IDRecept=21290&ImeRecepta=' + encodeURI($('#TekneName').val()), function() {
+			loadingStop("loadingRecipeName");	
+		});
+	})
+	
+	var optionsSubmit = {
+		target:	'#telo',
+		beforeSubmit:  showRequest,
+		success: function(responseText, statusText, xhr, $form) {
+			napisgumb = $form.find('[name=napisgumb]').val();
+			if (napisgumb==1){
+					$form.find('input[type=submit]').css('display', 'none')
+					$form.find('[name=napisgumb]').val('2');
+				}
+			loadingStop('loadingOddajPriporocilo');
+			}	
+		
+	}
+	
+	$(document).on("submit", ".PriporociRecept", function() {
+			$(this).ajaxSubmit(optionsSubmit)
+			return false;
+	})
+	
+	var optionsSubmit2 = {
+		target:	'#telo',
+		beforeSubmit:  showRequest,
+		success: function(responseText, statusText, xhr, $form) {
+			IDPriporocilo = $form.find('[name=IDpriporocilo]').val();
+			$('#submit' + IDPriporocilo).css('display', 'inline');
+			$('#PriporociRecept' + IDPriporocilo).find('[name=napisgumb]').val('1');
+			loadingStop('#loadingOddajPriporocilo');
+			}	
+		
+	}
+	
+	$(document).on("submit", ".PriporociRecept2", function() {	
+			$(this).ajaxSubmit(optionsSubmit2)
+			return false;
+	})
+	
+	
+
+
+	
+	function showRequest() {
+		loadingStart('loadingOddajPriporocilo')
+		}
+		
+	
+	$('#posljiprijatelju').on("click", function() {
+	
+		$.ajax({
+			url: '/inc/ajax-funkcije.asp?id=21290&akcija=posljiprijatelju',
+			success: function(text)
+				{
+
+				}
+		})	
+	
+	})
+	
+	$('#receptiFotkePostopki').show();
+	
+		$('.vinoslider').flickity({
+	// options
+		cellAlign: 'left',
+		contain: true,
+		prevNextButtons: true,
+		freeScroll: true,
+		setGallerySize: false
+	});
+
+		
+	
+})
+
+
+
+
+	
+
+	
+
+
+	
+$(document).ready(function() {
+
+	if (navigator.share) {
+		$('#webShare').css("display", "inline-block");
+		$("#ingredientsShare").css("display", "inline-block");
+		
+		$("#webShare").on("click", function(){
+				navigator.share({
+					title: 'Recept: Cmočki šarenke v žametni bučni juhi - Kulinarika.net',
+					text: 'Našel sem tale izvrsten recept',
+					url: 'https://www.kulinarika.net/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/'
+
+				})	
+		})
+		
+		$("#ingredientsShare").on("click", function(){
+				navigator.share({
+					title: 'Recept: Cmočki šarenke v žametni bučni juhi - Kulinarika.net',
+					text: '2 kosa šarenke\n2 kosa čebule\nčesen\n1 šopek peteršilja\n400 g krompirja\n2 jajci\n200 g drobtin\n100 g bučnih semen\n1 korenje\n200 g gomoljne zelene\n2 dl	belega vina\n2 dl	sladke smetane\n1/2 cvetače\n100 g skute\n0,5 dl bučnega olja\nmlada blitva\nsol\nbeli poper\nmuškatni orešček\ningver v prahu\n              \n              \n',
+					url: 'https://www.kulinarika.net/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/'
+
+				})
+
+				$.ajax({
+					url: '/inc/ajax-funkcije.asp?id=21290&akcija=stevci&storitev=1'
+				})
+				
+		})		
+		
+	}
+
+	
+	
+	$(".vinoslider").css('visibility', 'visible');
+
+
+	enquire.register("screen and (max-width: 768px)", {
+		match : function() {
+		   
+		   $('.mobileslider').flickity({
+				// options
+				cellAlign: 'left',
+				contain: true,
+				prevNextButtons: false,
+				setGallerySize: false
+			});
+		},
+		
+		 unmatch : function() {
+ 
+		   
+		   $('.mobileslider').flickity('destroy');
+		   
+		   		 
+		}
+	});
+		
+		
+		$('#telo').load("/inc/ajax-priporocamo.asp?ID=21290");
+		
+		
+
+				  
+		  		$.ajax({
+					url: '/inc/ajax-receptislike.asp',
+					data: {
+						IDRecept: 21290,
+						fetch: 3,
+						first: 1,
+						type: 'HTML'
+					},
+					success: function(HTML) {
+						$('.sp-slides').html(HTML);
+						mycarousel_itemAddCallback();
+					},
+					datatype: 'HTML'
+				});
+
+	
+				$('#receptiFotke').bind("click", function() {
+						
+						$( '#sliderRecepti' ).sliderPro( 'gotoSlide', 0 );
+						$('#receptiFotke').hide();
+						$('#receptiFotkePostopki').show();
+				});
+				
+				$('#receptiFotkePostopki').bind("click", function() {
+					$( '#sliderRecepti' ).sliderPro( 'gotoSlide', 1 );
+					$('#receptiFotkePostopki').hide();
+					$('#receptiFotke').show();
+				});
+
+				
+	
+		
+
+
+
+	 
+});
+
+function mycarousel_itemAddCallback(xml)
+{
+	
+	$( '#sliderRecepti' ).sliderPro({
+			width: 640,
+			height: 480,
+			thumbnailWidth: 140,
+			thumbnailHeight: 105,
+			imageScaleMode: 'cover',
+			arrows: true,
+			buttons: false,
+			loop:false,
+			fullScreen: true,
+			shuffle: false,
+			smallSize: 500,
+			mediumSize: 1000,
+			largeSize: 3000,
+			thumbnailArrows: true,
+			autoplay: false,
+			allowScaleUp: false,
+			reachVideoAction: 'playVideo',
+				breakpoints: {
+					768: {
+						thumbnailWidth: 120,
+						thumbnailHeight: 90
+					}
+				},
+			init: function() {
+
+				var slides = $(this).get(0).slides.length;
+				$( '#sliderRecepti' ).append('<div class="counter"><span class="active">1</span>/' + slides + '</div>');
+				
+				$( '#sliderRecepti img.sp-thumbnail.sp-video' ).removeClass('sp-video').parent().addClass('sp-video');
+				
+				$('.slider-pro .sp-image-container').css('background', '#000');
+			
+			}
+		});
+	
+   	$( '.sp-slide' ).click(function(){
+		 var slider = $( this ).parents( '.slider-pro' );
+		 if( ! slider.hasClass('sp-swiping') && ! $(this).find('a').hasClass('sp-video') ) {
+			  slider.find( '.sp-full-screen-button' ).trigger( 'click' );
+		 }
+	});
+
+	$( '#sliderRecepti' ).on( 'sliderResize', function() {
+
+			var slider = $(this),
+			scaleMode = slider.data('sliderPro').settings.imageScaleMode;
+			scaleUp=slider.data('sliderPro').settings.allowScaleUp;
+			
+			if ( slider.hasClass( 'sp-full-screen' ) && scaleMode !== 'contain' ) {
+				slider.sliderPro( 'imageScaleMode', 'contain' );
+				
+			} else if ( ! slider.hasClass( 'sp-full-screen' ) && scaleMode !== 'cover' ) {
+				slider.sliderPro( 'imageScaleMode', 'cover' );
+			}
+	});
+	
+
+	
+	$( '#sliderRecepti' ).on( 'gotoSlide', function(event) {
+		$(this).find('.counter .active').text(event.index + 1);
+		
+	});
+	$( '#sliderRecepti' ).on( 'videoPlay', function(event) {
+		$('.sp-caption-container .video').addClass('hide');
+		
+	});
+	$( '#sliderRecepti' ).on( 'videoEnd', function(event) {
+		$('.sp-caption-container .video').removeClass('hide');
+		
+	});	
+
+
+	
+
+}
+
+</script>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<script src="/ad/intext/intext2.js"></script>
+
+<!-- InstanceEndEditable -->
+
+
+
+<!-- InstanceParam name="onload" type="text" value="" -->
+</head>
+
+<body onload="">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/sl_SI/sdk.js#xfbml=1&version=v12.0&appId=182018238801081&autoLogAppEvents=1" nonce="kleaXAyl"></script>
+<div id='ozadjeReklamaContainer'><div id="ozadjeReklama"><iframe id='banner16' name='banner16' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='1600' height='1200' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner16').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=16&kanal=recepti&kat=juhe&podkat=ostale-juhe&user=2g2raembc96gkwqp&target=_blank&refresh=240&cb=0,1187054');});</script></div></div><div id='MegaContainer' data-sponzor='72578'><div id='Container' class='cf'>
+
+<div class="spinner-container">
+<div class="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div></div>
+
+<section id="glava_kulslo">
+<div id="glava_velika">
+<div id="glava_main" class="cf">
+
+
+<div class='glava'><a id='main-kulslo-logo' href='/'><img alt='logo kulinarika.net' class='logo-veliki' src='/grafika6/logotipi/logo3.png'><img alt='logo kulinarika.net' class='logo-mali' src='/grafika6/logotipi/logo-mali.png'></a></div><ul class='cf izpostavljeni Najnovejsi mobileslider'><li class='carousel-cell enNajnovejsi'><a href='/p/3/11994/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/11994/6-200x150.jpg' data-srcset='/slikerecepti/11994/6-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/11994/?d=0'>Jota na najbolj enostaven način </a></p></li><li class='carousel-cell enNajnovejsi'><a href='/p/3/13235/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/13235/3-200x150.jpg' data-srcset='/slikerecepti/13235/3-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/13235/?d=0'>Gobova juha s krompirjem</a></p></li><li class='carousel-cell enNajnovejsi'><a href='/p/3/3387/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/3387/4-200x150.jpg' data-srcset='/slikerecepti/3387/4-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/3387/?d=0'>Segedin golaž</a></p></li><li class='carousel-cell enNajnovejsi'><a href='/p/3/14695/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/14695/6-200x150.jpg' data-srcset='/slikerecepti/14695/6-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/14695/?d=0'>Zdrobovi hrustavci</a></p></li><li class='carousel-cell enNajnovejsi no-desktop'><a href='/p/3/22765/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/22765/1-200x150.jpg' data-srcset='/slikerecepti/22765/1-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/22765/?d=0'>Potratna rolada</a></p></li><li class='carousel-cell enNajnovejsi no-desktop'><a href='/p/3/4364/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/4364/84-200x150.jpg' data-srcset='/slikerecepti/4364/84-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/4364/?d=0'>Super dobra jabolčna pita</a></p></li><li class='carousel-cell enNajnovejsi no-desktop'><a href='/p/3/12221/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/12221/14-200x150.jpg' data-srcset='/slikerecepti/12221/14-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/12221/?d=0'>Marmorni kolač</a></p></li><li class='carousel-cell enNajnovejsi no-desktop'><a href='/p/3/10836/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/10836/3-200x150.jpg' data-srcset='/slikerecepti/10836/3-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/10836/?d=0'>Kavne kremšnite</a></p></li></ul>
+
+</div>
+
+    
+
+
+
+  <nav id="glavni_menu" class="cf">
+			<ul>
+				<li><a  class='izbrano' href="/recepti/">Recepti</a></li>
+				<li><a  href="/vino/">Vino</a></li>
+				<li><a  href="/forum/">Forumi</a></li>
+				<li><a  href="/fotoalbumi/">Albumi</a></li>
+				<li><a  href="/zid/">Zid</a></li>
+				<li><a  href="/blogi/">Blogi</a></li>
+				<li><a  href="/zdravje/">Zdravo</a></li>
+				<li><a  href="/zanimivo/">Zanimivo</a></li>
+     			<li><a class="noborder" href="/iskanje/?datumi=tridni#novosti">Novosti</a></li>
+			</ul>
+	</nav>
+ </div>
+ <div class="landing">
+<header id="header-glava">
+
+	<div id="glavni_menu_small_container">
+          <a href="#menu" id="glavni_menu_toggle" class="hamburger_menu"><span></span></a>
+    </div>
+
+  
+    <div id="kategorijeMenu">
+        <ul>
+          <li class="gumbGlava"><a href="javascript:void(null);"  class="main">kategorije<span class='text'> receptov</span><span class="icon-down"></span></a>
+          	<ul  class="main-menu cf odpirac">
+                <li><a class="menu" href="/recepti/seznam/sladice/"><img alt="sladice" src="/grafika6/recepti18.png">Sladice</a></li>
+                <li><a class="menu" href="/recepti/seznam/zelenjavne-jedi/"><img alt="zelenjavne jedi" src="/grafika6/recepti21.png">Zelenjavne jedi</a></li>
+                <li><a class="menu" href="/recepti/seznam/testenine/"><img alt="testenine" src="/grafika6/recepti20.png">testenine</a></li>
+                <li><a class="menu" href="/recepti/seznam/solate/"><img alt="solate" src="/grafika6/recepti19.png">solate</a></li>
+                <li><a class="menu" href="/recepti/seznam/juhe-in-zakuhe/"><img alt="juhe in zakuhe" src="/grafika6/recepti05.png">juhe in zakuhe</a></li>
+                <li><a class="menu" href="/recepti/seznam/mesne-jedi/"><img alt="mesne jedi" src="/grafika6/recepti07.png">mesne jedi</a></li>
+                <li><a class="menu" href="/recepti/seznam/kruh/"><img alt="kruh" src="/grafika6/recepti06.png">Kruh</a></li>
+                <li><a class="menu" href="/recepti/seznam/prikuhe/"><img alt="prikuhe" src="/grafika6/recepti15.png">prikuhe</a></li>
+                <li><a class="menu" href="/recepti/seznam/priloge/"><img alt="priloge" src="/grafika6/recepti16.png">priloge</a></li> 
+                <li><a class="menu" href="/recepti/seznam/jajcne-jedi/"><img alt="jajčne jedi" src="/grafika6/recepti04.png">jajčne jedi</a></li>
+                <li><a class="menu zdravo" href="/recepti/seznam/?zdravo=1"><img alt="zdravo" src="/grafika6/recepti-zdravo.png"><span>zdravo</span></a></li>
+                <a class="vsekat" href="/recepti/#kategorije">Vse kategorije receptov</a>         
+            </ul>
+           </li>
+        </ul>
+    </div>
+    
+
+            <form autocomplete="off" id="FormIskanje" name="FormIskanje" action="/iskanje/" method="get">
+            <input name="splosno_besede" type="text" class="ogrodjeTextBox rounded" placeholder="ključne besede">
+            <label>
+              <input type="image" name="imageField" id="imageField" alt="iskanje" src="/grafika6/lupa.PNG" class="GlavaIskanjeLupa rounded">
+            </label>
+            
+            <div class="glavniIskalecMenu">
+            <div class="main-menu">
+            <p><a class="linki3" href="/recepti/seznam/?iskanje=1">Napredno iskanje po receptih</a></p><p><a class="linki3" href="/forumi/forum/?vec=1">Iskanje po forumih</a></p>
+            </div>
+            </div>
+            
+             </form>
+      
+    
+    <div id="mojaKulinarikaMenu">
+	<ul id="prijava-menu">
+    
+    
+    
+
+   
+    <li><a href="javascript:void(null);" id="menu-avatar-opener" class="main rounded" >
+    	
+		<span class='ime'>prijava</span>
+        
+        </a>
+        
+        <ul class="main-menu cf odpirac">
+            
+            <div class='flex'>
+            
+            <div class="cross" id="prijava_menu_toggle"></div>
+            
+            
+            
+			
+            <li id="mojakulslo-login">
+
+             <form action="/mojakulinarika/prijava/" method="post" name="prijava" id="form-prijava" class="form-dizajn1 cf">
+                 <div id="mojakulslo-login-wrapper" class="cf">
+                 <input type="hidden" name="portal" value="1">
+                    <label for="loginuser">Uporabnik:</label><input id="loginuser" name="uporabnik"  type="text"><br>
+                    <label for="loginpassword">Geslo:</label><input id="loginpassword" name="geslo" type="password"><br>
+				 </div>
+            
+            
+        
+       
+       		 <input name="Submit" type="submit"  class="submit" value="Prijava">
+        
+ 		
+        	 </form>
+         	  </li>
+       	  <a href="/mojakulinarika/pozabljeno/" class="noborder">Pozabljeno geslo</a>
+          <a class="noborder" href="/mojakulinarika/vpis/">Nov uporabnik</a>
+  
+
+            
+            
+            </div>
+        </ul>
+    </li>
+    </ul>
+</div>
+    
+
+
+
+
+</header>
+</div>
+</section>
+        <div id="glavaPasica" class="cf">
+        <iframe id='banner1' name='banner1' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='980' height='250' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner1').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=1&kanal=recepti&kat=juhe&podkat=ostale-juhe&user=2g2raembc96gkwqp&target=_blank&refresh=240&cb=0,7624934');});</script> 
+        </div>
+
+<div id="bodyContainer" class="cf">
+
+    <div id="breadcrumbs">
+          <div id="breadcrumbsPortal">
+               
+          </div>
+        <!-- InstanceBeginEditable name="breadcrumbs" -->
+
+<p class='breadcrumbs'><a href='/'>domov</a> » <a href='/recepti/'>recepti</a> » <a href='/recepti/seznam/juhe-in-zakuhe/'>juhe in zakuhe</a> » <a href='/recepti/seznam/juhe-in-zakuhe/ostale-juhe/'>ostale juhe</a> » <span class='trenutno'>Cmočki šarenke v žametni bučni juhi</span></p>
+<!-- InstanceEndEditable -->
+    
+    </div>
+<main id="vsebina" class="cf">
+<!-- InstanceBeginEditable name="Main" -->
+
+<section id="recepti" class="recept main-left">
+
+<div id='recept-main' itemscope itemtype="http://schema.org/Recipe">
+
+<span itemprop='keywords' style='display:none'>juhe</span>
+ 
+ 
+ 
+  <h1 itemprop="name">
+  
+  Cmočki šarenke v žametni bučni juhi
+          </h1>
+    <p class="podnaslov" itemprop="description">aromatična bučna juha z ribjimi cmoki</p>
+
+<div class='podatki linki'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/2g2raembc96gkwqp/'><span itemprop='author'>Spar Slovenija</span></a>&nbsp;<a class='poslji-pismo' href='/mojakulinarika/sporocila/poslji/?naslovnik=Spar Slovenija'><img title='Pošljite uporabniku Spar Slovenija zasebno sporočilo' class='email' src='/grafika6/ikona-email.png'></a>&#160;</div><span class='hide' itemprop='datePublished'></span> 
+   
+
+
+
+
+
+
+<div id="fotografije" class="cf">
+
+	
+
+			
+			
+			<div id="sliderRecepti" class="slider-pro sp-no-js ">
+
+				<div class="sp-slides">
+					
+					
+					<a class="venobox" href="/slikerecepti/21290/1.jpg"><img alt="fotografija recepta" class="single rounded-all" src="/slikerecepti/21290/1.jpg" ></a>
+					
+				</div>
+			</div> 	
+				</div><ul class='servis cf linki'><span itemprop='recipeCategory' style='display:none'>juhe in zakuhe: ostale juhe</span><li class='zahtevnost'><img src='/grafika6/ikona-utez.png' alt='Zahtevnost' title='zahtevnost'><img src='/grafika6/ikona-utez.png' alt='Zahtevnost' title='zahtevnost'><img src='/grafika6/ikona-utez-prazna.png' alt='Zahtevnost' title='zahtevnost'><img src='/grafika6/ikona-utez-prazna.png' alt='Zahtevnost' title='zahtevnost'><img src='/grafika6/ikona-utez-prazna.png' alt='Zahtevnost' title='zahtevnost'></li><li><img class='ura' src='/grafika6/ikona-ura.png' alt='45 minut' title='45 minut'>&nbsp;<span class='cas'>45 min</span><time itemprop='totalTime' datetime='PT45M'></time></li><li id='ocene' ><a href='/inc/popup-ocene.asp?ID=21290' id='popup-oceneseznam-holder' data-type='ajax' data-width='340' data-height='500' data-fullscreen_mobile='true' title='Ocenite recept'><img src='/grafika6/ikona-ocena-prazna.png' title='0 ocen'>&nbsp;<span  title='povprečna ocena: ni ocenjen'></span></a></li><li class='zanimivosti'><a href='/inc/ajax-funkcije.asp?akcija=recepti-zanimivosti&ID=21290' id='popup-zanimivosti-holder' data-type='ajax' data-width='300' data-height='290' data-fullscreen_mobile='true'><img title='Zanimivosti' alt='Zanimivosti' src='/grafika7/icon-info.svg'></a></li>
+
+</ul>
+
+    
+	<div style="display:none" itemprop="video" itemscope="itemscope" itemtype="http://schema.org/VideoObject">
+		<p itemprop="name">Cmočki šarenke v žametni bučni juhi</p>
+		<p itemprop="description">aromatična bučna juha z ribjimi cmoki</p>
+		<meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/dgzZ8tf8O_o/0.jpg?0.6644053">
+		<meta itemprop="contentUrl" content="https://youtu.be/-dgzZ8tf8O_o">
+		<meta itemprop="uploadDate" content="2019-02-16T10:30:07">
+	</div>
+<ul class='priljubljeni'><a class='neopazen' href='/inc/popup-prispevaj.asp?id=21290' id='popup-prispevaj-holder' data-type='ajax' data-width='300' data-height='290' data-fullscreen_mobile='true' title='Prispevaj' alt='Prispevaj'><li><img title='prispevajte' src='/grafika7/icon-add-photo.svg' height='24'>&nbsp;Prispevaj</li></a><a class='neopazen' href='/mojakulinarika/nisemclan/'><li><img src='/grafika7/icon-heart-off.svg' title='shranite med priljubljene' height='28'>&nbsp;Shrani</li></a><a class='neopazen' href='/recepti/tiskanje/?id=21290' target='_blank'><li><img title='natisnite recept' src='/grafika7/icon-printer.svg' height='24'>&nbsp;Natisni</li></a></ul>
+
+<div id="uvod" class="linki">
+
+	
+
+</div>
+
+
+
+
+<div id="receptSestavine"><h2>Sestavine
+
+<span id="ingredientsShare">
+<img title="shranite sestavine" src="/grafika7/icon-share.svg" height="36">
+</span>
+
+</h2>
+<div class='kolicina' itemprop='recipeYield'>Količina:  4</div>
+      <div id="sestavine" class="articlesize linki ">
+        
+           <p class="cf" itemprop="recipeIngredient"><span class="label">2 kosa </span><span class="label-value">šarenke</span></p><p class="cf" itemprop="recipeIngredient"><span class="label">2 kosa </span><span class="label-value">čebule</span></p> <p class="cf" itemprop="recipeIngredient"><span class="label"></span><span class="label-value">česen</span></p><p class="cf" itemprop="recipeIngredient"><span class="label">1 šopek </span><span class="label-value">peteršilja</span></p> <p class="cf" itemprop="recipeIngredient"><span class="label">400 g </span><span class="label-value">krompirja</span></p><p class="cf" itemprop="recipeIngredient"><span class="label">2 </span><span class="label-value">jajci</span></p> <p class="cf" itemprop="recipeIngredient"><span class="label">200 g </span><span class="label-value">drobtin</span></p><p class="cf" itemprop="recipeIngredient"><span class="label">100 g </span><span class="label-value">bučnih semen</span></p> <p class="cf" itemprop="recipeIngredient"><span class="label">1 </span><span class="label-value">korenje</span></p><p class="cf" itemprop="recipeIngredient"><span class="label">200 g </span><span class="label-value">gomoljne zelene</span></p> <p class="cf" itemprop="recipeIngredient"><span class="label">2 dl </span><span class="label-value">belega vina</span></p><p class="cf" itemprop="recipeIngredient"><span class="label">2 dl </span><span class="label-value">sladke smetane</span></p> <p class="cf" itemprop="recipeIngredient"><span class="label">1/2 </span><span class="label-value">cvetače</span></p><p class="cf" itemprop="recipeIngredient"><span class="label">100 g </span><span class="label-value">skute</span></p> <p class="cf" itemprop="recipeIngredient"><span class="label">0,5 dl </span><span class="label-value">bučnega olja</span></p><p class="cf" itemprop="recipeIngredient"><span class="label"></span><span class="label-value">mlada blitva</span></p> <p class="cf" itemprop="recipeIngredient"><span class="label"></span><span class="label-value">sol</span></p><p class="cf" itemprop="recipeIngredient"><span class="label"></span><span class="label-value">beli poper</span></p> <p class="cf" itemprop="recipeIngredient"><span class="label"></span><span class="label-value">muškatni orešček</span></p><p class="cf" itemprop="recipeIngredient"><span class="label"></span><span class="label-value">ingver v prahu</span></p> 
+</div>
+
+
+
+
+</div>
+
+
+<label class="toggle hide_important" id="zaslon">
+	<input class="toggle-checkbox" type="checkbox">
+	<div class="toggle-switch"></div>
+	<span class="toggle-label">Način za kuhanje</span>
+</label>
+
+  <div id="receptPostopek"><h2>Postopek</h2>
+
+    <div id="postopek" class="articlesize linki ">
+
+  <p class="cf en_korak_postopek" itemprop="recipeInstructions"><span class="label">1. </span><span class="data">Šarenki filiramo in odstranimo vse kosti. Ribo nasekljamo, dodamo jajci, drobtine, skuto, česen, čebulo in peteršilj. Premešamo, da dobimo homogeno maso in oblikujemo cmočke poljubne velikosti. Cmočke kuhamo na sopari cca. 10 minut. </span></p><p class="cf en_korak_postopek" itemprop="recipeInstructions"><span class="label">2. </span><span class="data">Za juho najprej prepražimo čebulo, dodamo strt česen in vso zelenjavo, narezano na kocke. Pražimo cca. 2 do 3 minute in zalijemo z vinom. Dušimo do mehkega. </span></p><p class="cf en_korak_postopek" itemprop="recipeInstructions"><span class="label">3. </span><span class="data">Proti koncu dodamo smetano in vse skupaj dobro zmeljemo v gladko kremno juho. Dodamo ji ribje cmočke in postrežemo.</span></p><p class="cf delimiter" itemprop="recipeInstructions"><span class="label"></span><span class="data"><b>Namig:</b></span></p><p class="cf en_korak_postopek" itemprop="recipeInstructions"><span class="label"></span><span class="data">Bučna semena popražimo, da sprostimo eterična olja.</span></p></div></div><br class='clear'><div id="videooglas"><iframe id='banner25' name='banner25' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='640' height='480' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner25').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=25&kanal=recepti&kat=juhe&podkat=ostale-juhe&user=2g2raembc96gkwqp&target=_blank&refresh=240&cb=0,3993281');});</script></div><div id='opombe' class='articlesize linki'><h2>Opombe</h2> <p>SPONZORIRANO SPOROČILO</p></div>
+
+<link itemprop="image" href="https://www.kulinarika.net/slikerecepti/21290/1.jpg">
+
+</div>
+
+<ul id="servis2" class="servis clearfix">
+
+	<span class=''><a href="/recepti/seznam/?vrstajedi=5">#juhe</a></span>
+
+
+
+    </ul>
+
+<ul class='servis cf linki'><li><a rel='noreferrer' href='https://www.facebook.com/sharer.php?u=https://www.kulinarika.net/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/' target='_blank'><img src='/grafika7/icon-facebook.svg' height='36' title='pošljite na Facebook'></a></li><li><a rel='noreferrer' href='https://twitter.com/intent/tweet?text=Cmo%C4%8Dki+%C5%A1arenke+v+%C5%BEametni+bu%C4%8Dni+juhi%3A+&url=https://www.kulinarika.net/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/' target='_blank'><img title='pošljite na Twitter' src='/grafika7/icon-twitter.svg' height='36'></a></li><li id='webShare'><img title='delite recept' src='/grafika7/icon-share.svg' height='36'></li><li><a class='link prijatelj' id='posljiprijatelju' href='mailto:?subject=Zanimiv%20recept%20na%20KULINARIKA%2ENET&body=Pozdravljen%2Da%21%0D%0A%0D%0ANa%20strani%20KULINARIKA%2Enet%20sem%20zasledil%28a%29%20zanimiv%20recept%2C%20ki%20bi%20te%20morda%20zanimal%28a%29%3A%0D%0A%0D%0Ahttps%3A%2F%2Fwww%2Ekulinarika%2Enet/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/'><img title='pošljite po emailu' alt='pošljite po emailu' src='/grafika7/icon-email.svg' height='24'></a></li></ul>
+
+    
+
+
+
+	<div id="malioglasi" class="cf">
+    
+    <div id="malioglas1"><iframe id='banner18' name='banner18' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='150' height='180' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner18').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=18&kanal=recepti&kat=juhe&podkat=ostale-juhe&user=2g2raembc96gkwqp&target=_blank&refresh=240&cb=1,056916E-02');});</script></div><div id="malioglas2"><iframe id='banner19' name='banner19' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='150' height='180' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner19').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=19&kanal=recepti&kat=juhe&podkat=ostale-juhe&user=2g2raembc96gkwqp&target=_blank&refresh=240&cb=0,2094693');});</script></div><div id="malioglas3"><iframe id='banner20' name='banner20' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='150' height='180' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner20').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=20&kanal=recepti&kat=juhe&podkat=ostale-juhe&user=2g2raembc96gkwqp&target=_blank&refresh=240&cb=0,8783481');});</script></div><div id="malioglas4"><iframe id='banner21' name='banner21' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='150' height='180' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner21').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=21&kanal=recepti&kat=juhe&podkat=ostale-juhe&user=2g2raembc96gkwqp&target=_blank&refresh=240&cb=0,8717119');});</script></div>
+    
+    </div>
+
+<div id='mnenja-container'><h2>Mnenja o receptu</h2>
+
+											<div id="pisite_skok"></div>
+											
+											<span class="pomembno">Za pošiljanje mnenj je potreben <a href="/mojakulinarika/vpis/">vpis</a> ali
+											 <a href="/mojakulinarika/prijava/">prijava</a>!</span> 
+											 
+	
+		<script>
+		
+			$(document).ready(function() {
+	
+				
+				
+				$(document).on("click", ".preberivec", function() {	
+						$('#mnenja').addClass('odprto');
+						$('.preberivec').hide();
+				})
+
+
+				if ($('#mnenja').height()>350 && isMobile)
+					{
+						$('#mnenja').removeClass('odprto');
+						$('.preberivec').show();
+					}
+					
+					else
+					
+					{
+						$('.preberivec').hide();
+					}
+	
+	})
+		
+		
+		</script>
+			
+</div>
+      
+    </section>
+	
+
+<!-- InstanceEndEditable -->
+<section id="servisniBlok" class="recepti">
+<!-- InstanceBeginEditable name="neboticnik" -->
+
+<div id='nadOglas'>
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="popup-pravila">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Pogoji sodelovanja v nagradni igri</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body en_clanek"></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="popup-nagrade">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Več o nagradni igri</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body en_clanek"></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="popup-nagrade-old">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Več o potekli nagradni igri</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body en_clanek"></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="popup-sponzor">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>O pokrovitelju nagradne igre</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body en_clanek"></div>
+    
+    </div>
+
+</div><div class='cf' id='oglasi-stranski'><div id="oglas-aside"><iframe id='banner6' name='banner6' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='300' height='250' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner6').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=6&kanal=recepti&kat=juhe&podkat=ostale-juhe&user=2g2raembc96gkwqp&target=_blank&refresh=240&cb=0,6260412');});</script></div><div id="oglas-aside2"><iframe id='banner3' name='banner3' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='300' height='250' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner3').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=3&kanal=recepti&kat=juhe&podkat=ostale-juhe&user=2g2raembc96gkwqp&target=_blank&refresh=240&cb=0,3630531');});</script></div></div><aside class='ReceptiVroci cf'><h2><a href='/recepti/seznam/?avtor=Spar Slovenija'>Več receptov - Spar Slovenija</a></h2><div class='mobileslider'><div class='vroci levo'><div class='slika'><a class='image-wrap video' href='/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/'><img alt='fotografija recepta' src='/grafika7/slika-se-nalaga-manjsa.png' data-src='/slikerecepti/21290/1-200x150.jpg' data-sizes='auto' data-srcset='/slikerecepti/21290/1-200x150.jpg 200w, /slikerecepti/21290/1-400x300.jpg 400w' class='lazyload'></a></div><a class="link single-line" href='/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/'>Cmočki šarenke v žametni bučni juhi</a></div></div></aside><div id='zid-include'></div>
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="prijatelj">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Pošlji prijatelju</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body "></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="my-ocena">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Ocenite recept</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body "></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="ocenerecepta">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Ocene recepta</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body "></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="pomoc-priporocamo">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Zraven tekne</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body "></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="pomoc-vino">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Vinski kotiček</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body "></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="popupSubscribed">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Naročeni ste na nova mnenja</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body ">Ko bo nekdo napisal novo mnenje k temu receptu, boste o tem dobili e-mail obvestilo (le enkrat, dokler ne odprete spet tega recepta). Na naročanje se lahko odjavite na samem receptu ali pa iz beležke.</div>
+    
+    </div>
+
+
+    <!-- InstanceEndEditable -->
+</section>
+</main>
+</div>
+<div class="push"></div>
+</div>
+
+
+
+<footer class="footer cf">
+
+<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    	<div class="img_wrap"><img alt="prazno" src="/images/prazno.jpg"></div>
+	    	<div class="txt_wrap">
+	    		<h3>Zaznan je blokator oglasov</h3>
+				<p>Vsebina Kulinarika.net je podprta z oglaševanjem. Če želite še naprej uživati v naših receptih, izklopite blokiranje oglasov.</p>
+				<h4>Prosimo vas, da za našo spletno stran onemogočite blokiranje oglasov.</h4>
+				<!-- <p>Onemogoči blokiranje oglasov<p> -->
+				<a href="javascript:void(0);" class="close_modal">Nadaljujte z blokiranjem oglasov</a>
+			</div>
+	  </div>
+
+	</div>
+
+    <div id="footer-top">
+      
+    </div>
+	<div class="cf" id="footer-main">
+	<p>&copy; 2022 Spletna kulinarika d.o.o.</p>
+	<ul>
+    
+		<li><a href="/oglasevanje/">Trženje</a></li>	
+		<li><a href="/pravo/">Pogoji uporabe</a></li>
+		<li><a href="/zasebnost/">Zasebnost</a></li>
+		
+   		<li><a href="/faq/">Pomoč</a></li>
+        <li><a href="/zanimivo/dogodki/">Dogodki</a></li>
+        
+		<li><a href="/uporabniki/seznam/">Člani</a></li>
+	</ul>
+</div>
+
+  
+</footer>
+
+<script>
+<!--//<![CDATA[
+if (isMobile == true) {
+var ox_u = 'https://oglasi2.kulinarika.net/www/delivery/al.php?zoneid=24&layerstyle=simple&align=left&valign=top&padding=0&padding=0&shifth=0&shiftv=0&closebutton=t&nobg=t&noborder=t';
+if (document.context) ox_u += '&context=' + escape(document.context);
+document.write("<scr"+"ipt src='" + ox_u +"'></scr"+"ipt>");
+}
+//]]>--></script>
+
+</div>
+
+<!-- InstanceBeginEditable name="dno" -->
+
+<!-- InstanceEndEditable -->
+<a href='#0' class='cd-top' title='na vrh'>&uarr;</a>
+</body>
+<!-- InstanceEnd --></html>

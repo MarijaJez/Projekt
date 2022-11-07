@@ -1,0 +1,1156 @@
+<!doctype html>
+
+
+<html lang="sl"><!-- InstanceBegin template="/Templates/ogrodje3.dwt.asp" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/css/normalize.css" rel="stylesheet" type="text/css">
+<link href="/css/skupaj-css.css?rel=4.0502524229315" rel="stylesheet" type="text/css">
+<link href="/stiliprint.css" rel="stylesheet" type="text/css" media="print">
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,400i,600&display=swap' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="/css/flickity.css" media="screen">
+
+<script src="/js/lazysizes.min.js" async=""></script>
+<link href="/css/new-responsive.css?v=1.03" rel="stylesheet" type="text/css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/grafika6/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/grafika6/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/grafika6/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/grafika6/favicons/manifest.json">
+<link rel="mask-icon" href="/grafika6/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/grafika6/favicons/favicon.ico">
+<meta name="msapplication-config" content="/grafika6/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:locale" content="sl_SI">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kulinarika.net">
+<meta property="fb:app_id" content="182018238801081">
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Kulinarika.net",
+  "url": "http://www.kulinarika.net",
+  "image": "http://www.kulinarika.net/grafika6/logotipi/logo4.png",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.kulinarika.net/iskanje/?splosno_besede={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+
+</script>
+
+<link href='/css/recepti.css?v=4.0502524229315' rel='stylesheet' type='text/css'>
+<!-- InstanceBeginEditable name="stili" -->
+
+<!-- InstanceEndEditable -->
+
+
+<script>
+
+	
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15823371-4', {'storage': 'none', 'clientId': 'c6c939c3f421a47cfaf5d19505e23a7a'});
+  ga('require', 'linkid', 'linkid.js');
+  ga('require', 'displayfeatures');
+
+	
+	// Creates an adblock detection plugin.
+	ga('provide', 'adblockTracker', function(tracker, opts) {
+	  var ad = document.createElement('ins');
+	  ad.className = 'AdSense';
+	  ad.style.display = 'block';
+	  ad.style.position = 'absolute';
+	  ad.style.top = '-1px';
+	  ad.style.height = '1px';
+	  document.body.appendChild(ad);
+	  tracker.set('dimension' + opts.dimensionIndex, !ad.clientHeight);
+	  document.body.removeChild(ad);
+	});
+	
+	ga('require', 'adblockTracker', {dimensionIndex: 1});
+    ga('send', 'pageview'), {'anonymizeIp': true};
+  
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3MTV8XXHPL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3MTV8XXHPL');
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script>
+
+<!--    -->
+
+
+
+<script data-ad-client="ca-pub-3352501607232481" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+
+
+
+
+$(function(){
+	$('#menu .main-menu #menu02').addClass("selected");
+	
+		if (!isMobile) {
+			$( "#zid-include" ).load( "/inc/ajax-funkcije.asp?akcija=zid-include&Menu=0203&sponzor=", function() {
+			console.log( "Load was performed." );
+			});
+		}
+	
+	$('.mobileslider').css('visibility', 'visible');
+	
+	enquire.register("screen and (max-width: 768px)", {
+    match : function() {
+		
+			$('#glavni_menu').prop('id', 'glavni_menu_small').appendTo($('#glavni_menu_small_container'));
+		   
+		   $('#header-glava').prop('class', 'small');
+		   $('#main-kulslo-logo').prependTo($('#header-glava'));
+		   $('#kuverta-pismo').insertBefore($('#glavaPasica'));
+		   //$('#info-praznik').prependTo($('.main-left'))
+
+		 
+    },
+	
+	 unmatch : function() {
+	  $('#main-kulslo-logo').prependTo($('#glava_main .glava'));
+      $('#glavni_menu_small').prop('id', 'glavni_menu').appendTo($('#glava_velika'));
+	  $('#header-glava').prop('class', '');
+	  
+	  $('#kuverta-pismo').prependTo($('#prijava-menu'));
+	  
+
+ 		}
+	});
+	
+	
+})
+
+  $(window).on('load resize', function() {
+
+
+	$(".spinner-container").delay(100).fadeOut(600).remove();
+	
+	
+	
+})
+
+jQuery.uaMatch = function( ua ) {
+        ua = ua.toLowerCase();
+
+        var match = /(chrome)[ /]([w.]+)/.exec( ua ) ||
+                /(webkit)[ /]([w.]+)/.exec( ua ) ||
+                /(opera)(?:.*version|)[ /]([w.]+)/.exec( ua ) ||
+                /(msie) ([w.]+)/.exec( ua ) ||
+                ua.indexOf("compatible") < 0 && /(mozilla)(?:.*? rv:([w.]+)|)/.exec( ua ) ||
+                [];
+
+        return {
+                browser: match[ 1 ] || "",
+                version: match[ 2 ] || "0"
+        };
+};
+
+// Don't clobber any existing jQuery.browser in case it's different
+if ( !jQuery.browser ) {
+        matched = jQuery.uaMatch( navigator.userAgent );
+        browser = {};
+
+        if ( matched.browser ) {
+                browser[ matched.browser ] = true;
+                browser.version = matched.version;
+        }
+
+        // Chrome is Webkit, but Webkit is also Safari.
+        if ( browser.chrome ) {
+                browser.webkit = true;
+        } else if ( browser.webkit ) {
+                browser.safari = true;
+        }
+
+        jQuery.browser = browser;
+}
+
+
+
+
+</script>
+
+<script src="/js/funkcije-skupaj.js?v=1.043218"></script>
+
+<script src="/js/flickity.min.js?v=1.043218"></script>
+
+<script src="/js/new-responsive.js?v=1.043218"></script>
+ <script src="/js/jquery.cookiecuttr.js"></script>
+<script >
+$(document).ready(function () {
+	// activate cookie cutter
+    $.cookieCuttr({
+		cookieAnalytics:false,
+		cookieCutter: true,
+		
+    	cookieDeclineButton: false,
+		cookieOverlayEnabled:true,
+		
+		cookieDisable: '.piskotki',
+		cookieDomain: 'kulinarika.net',
+		cookieNotificationLocationBottom: false,
+		cookieWhatAreTheyLink:'/zasebnost/',
+		cookiePolicyLink: '/zasebnost/'
+    });
+}); 	
+</script>
+
+<!-- InstanceBeginEditable name="napis" -->
+<title>Kulinarika.net - Recepti</title>
+
+
+
+<meta name="Description" content="seznam receptov ">
+<meta name="Keywords" content="">
+
+<link href="/css/autoSuggest.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery.autoSuggest.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/jquery.datetimepicker.min.css">
+<script src="/js/jquery.datetimepicker.full.min.js"></script>
+
+<meta property="fb:app_id" content="182018238801081" />
+<meta property="og:title" content="656 receptov / rubrika: juhe-in-zakuhe" />
+
+<meta property="og:description" content="" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Kulinarika.net" />
+<meta property="og:url" content="https://www.kulinarika.net/recepti/seznam/juhe-in-zakuhe/?offset=-19" />
+
+<meta property="og:image" content="https://www.kulinarika.net/slikerecepti/21290/1.jpg?0.7055475" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:secure_url" content="https://www.kulinarika.net/slikerecepti/21290/1.jpg?0.533424" />
+
+
+
+<script type="text/javascript" src="/js/knjiga.js"></script>
+<script type="text/javascript">
+
+
+
+
+$(document).ready(function() {
+
+		
+		
+		
+			
+			var $iskalec = $('#iskalec').removeClass('hide');
+			$iskalec.on( 'ready.flickity', function() {
+				$('#iskalec').hide();
+				$('#iskanje-box .submit').removeClass('hide');
+				kategorija=$("input[name='kategorija']:checked");
+				novosti();
+				kategorijaKlik(kategorija);
+
+				
+			});
+			$iskalec.flickity({
+  			// options
+				cellAlign: 'left',
+				contain: true,
+				prevNextButtons: true,
+				pageDots: true,
+				wrapAround: true,
+				hash: true
+			});
+			
+		function novosti()
+		{
+			loc=$('#datumi').val();
+			if (loc=="customdate") {
+				$("#datumform").show("fast", function() {
+					$iskalec.flickity('resize');
+				});
+			}
+			else
+			{
+				$("#datumform").hide("fast", function() {
+
+					$iskalec.flickity('resize');
+				});
+				$("#datumod").val("");
+				$("#datumdo").val("");
+			}
+			
+		}
+
+		
+		
+		function fIzdelajLink() {
+		
+			besede=$("input[name=besede]").val();
+			imerecepta=$("input[name=imerecepta]").val();
+			avtor=$("input[name=avtor]").val();
+			sestavine= $("input[name='as_values_sestavine']").val();
+			sestavine = sestavine.substring(1, sestavine.length-1);			
+			dimenzije= $("input[name='dimenzije']:checked").val();
+			sponzorirani= $("input[name='sponzorirani']:checked").val();
+			kategorija= $("input[name='kategorija']:checked").val();
+			kategorija1= $("input[name='kategorija1']:checked").val();
+			priloznost= $("input[name='priloznost']:checked").val();
+			priprava= $("input[name='priprava']:checked").val();
+			prehrana= $("input[name='prehrana']:checked").val();
+			letnicas= $("input[name='letnicas']:checked").val();
+			vrstajedi= $("input[name='vrstajedi']:checked").val();
+			skupina= $("input[name='skupinajedi']:checked").val();
+			vrstaobroka= $("input[name='vrstaobroka']:checked").val();
+			cas= $("input[name='cas']:checked").val();
+			slika=$("input[name='slika']").is(":checked") ? 1 : 0;
+			datum= $("select[name='datum_kriterij']").val();
+			datumi= $("select[name='datumi']").val();
+			datumod= $("input[name='datumod']").val();
+			datumdo= $("input[name='datumdo']").val();
+			zdravo=$("input[name='zdravo']").is(":checked") ? 1 : 0;
+			video=$("input[name='video']").is(":checked") ? 1 : 0;
+
+
+			// Construct link
+			
+			link=''
+		
+			if (kategorija) {
+				$.ajax({
+				  method: 'get',
+				  url: '/inc/ajax-funkcije.asp',
+				  data: {'kategorija':kategorija,
+						  'akcija': 'receptikategorije'},
+				  success: function (data) {
+						link+= data + "/";
+
+
+						if (kategorija1) {
+							$.ajax({
+							  method: 'get',
+							  url: '/inc/ajax-funkcije.asp',
+							  data: {'podkategorija':kategorija1,
+									  'akcija': 'receptipodkategorije'},
+							  success: function (data) {
+									link+= data + "/";
+									sestavilink();
+								},
+							  error: function () {
+									console.log("Napaka !!");
+								}
+							});
+						} else
+						{ // nismo izbrali podkategorije
+						 sestavilink();
+						}	
+					},
+				  error: function () {
+						console.log("Napaka !!");
+					}
+				});
+			} else 
+			{ // nismo izbrali kategogrije
+				sestavilink();
+			}
+
+
+
+			function sestavilink() {
+			
+				if (besede) {link+="&besede=" + encodeURIComponent(besede)};
+				if (imerecepta) {link+="&imerecepta=" + encodeURIComponent(imerecepta)};
+				if (avtor) {link+="&avtor=" + avtor}
+				if (sestavine) {link+="&sestavine=" + encodeURIComponent(sestavine)}
+				if (dimenzije) {link+="&dimenzije=" + dimenzije}
+				if (sponzorirani) {link+="&sponzorirani=" + sponzorirani}
+				if (priloznost) {link+="&priloznost=" + priloznost}
+				if (priprava) {link+="&priprava=" + priprava}
+				if (prehrana) {link+="&nacinprehrane=" + prehrana}
+				if (letnicas) {link+="&letnicas=" + letnicas}
+				if (vrstajedi) {link+="&vrstajedi=" + vrstajedi}
+				if (skupina) {link+="&skupina=" + skupina}
+				if (vrstaobroka) {link+="&vrstaobroka=" + vrstaobroka}
+				if (cas) {link+="&cas=" + cas}
+				if (slika) {link+="&slika=" + slika}
+				if (datum) {link+="&datum_kriterij=" + datum}
+				if (datumi) {link+="&datumi=" + encodeURIComponent(datumi)}
+				if (datumod) {link+="&datumod=" + encodeURIComponent(datumod)}
+				if (datumdo) {link+="&datumdo=" + encodeURIComponent(datumdo)}
+				if (zdravo) {link+="&zdravo=" + zdravo}
+				if (video) {link+="&video=" + video}
+
+				
+
+				link = link.replace('&','?');
+				
+				//var hash = window.location.hash;
+				//if (hash) {link = link + hash};
+				
+				
+				
+				window.location.href="/recepti/seznam/" + link;
+				//if (hash) {location.reload();}
+				//
+			
+			}
+			
+		
+		}
+		
+		function odpriIskalec() {
+		
+			// če je filter zaprt ga odpri
+			
+			if ($('#iskalec').is(':hidden')) {
+				$('.flickity-button').hide();
+				$('#iskanje-box .odpirac').addClass('odprto');
+				$('#iskalec').slideDown('fast', function() {
+					$('#iskanje-box .submit').show(function(){
+					});
+					$iskalec.flickity('resize');
+					$('.flickity-button').show();
+					
+				})
+			}
+		
+		}
+		
+		$('#iskanje-uporabljeno .pojem').on('click', function() {
+		
+			odpriIskalec();
+
+			
+			var celica = $(this).data('cell');
+			$iskalec.flickity( 'select', celica-1, false, true )
+		})
+		
+		
+		
+		$('.remove').on('click', function() {
+			
+			
+			polje = $(this).data('polje');
+			$("[name='" + polje + "']").val('');
+			$("[name='" + polje + "']").prop('checked', false);
+			
+			
+			// izjema za datumsko iskanje
+
+			if (polje=="datumi") {
+			
+				$("[name='datumod']").val('');
+				$("[name='datumdo']").val('');
+			
+			}
+			
+			fIzdelajLink();
+			
+		})
+
+		
+		$('#iskanje-box .odpirac').on('click', function() {
+			iskalec=$('#iskalec');
+			iskanjebox=$('#iskanje-box .submit')
+			if (iskalec.is(':visible')) {
+				$('.flickity-button').hide();
+				iskalec.slideUp('fast', function() {
+					$('#iskanje-box .odpirac').removeClass('odprto');		
+				});
+				iskanjebox.hide();
+				
+			}
+			else
+			{	
+				$('.flickity-button').hide();
+				$('#iskanje-box .odpirac').addClass('odprto');
+				iskalec.slideDown('fast', function() {
+				iskanjebox.show();
+				$('.flickity-button').show();
+				$iskalec.flickity('resize');
+				});
+			}
+			
+		})
+		
+
+		
+		$("#datumi").on("change", function() {
+			novosti();
+			})
+	
+
+	
+		$('#sestavine').on('focus', function() {
+			$('ul#as-selections-sestavine').addClass('focus')
+		})
+		
+		$('#sestavine').on('blur', function() {
+			$('ul#as-selections-sestavine').removeClass('focus')
+		})
+
+		$('.kategorija:not(.all)').on('click', function(){
+				selector=$(this);
+				kategorijaKlik(selector);
+		});
+
+		function kategorijaKlik(gumb) {
+
+			if (gumb.attr('id')=="katall") {return}
+
+			gumb.parent().siblings('.container').hide();
+			
+			
+			$.ajax({
+			  dataType: "json",
+			  method: 'post',
+			  url: '/inc/ajax-json-getreceptikategorije.asp',
+			  data: {'kategorija':gumb.val()},
+			  success: function (data) {
+					var response=data.response;
+					if (data.status=="success")
+						{
+						var construct="";
+
+						construct += "<span class='container'>"
+						construct += "<input class='kategorija1' type='radio' ID='podkat0' name='kategorija1' value=''"
+						if ('-1'==0) {
+							construct += " CHECKED "
+						}
+						construct += ">"					
+						construct += "<label for='podkat0'>Vse</label></span>"
+
+						for (var x = 0; x < response.length; x++) {
+						
+						construct += "<span class='container'>"
+						construct += "<input class='kategorija1' type='radio' ID='podkat" + response[x].ID + "' name='kategorija1' value='" + response[x].ID + "'"
+						if (response[x].ID==0) {
+							construct += " CHECKED "
+						}
+						construct += ">"
+						construct += "<label for='podkat" + response[x].ID + "'>" + response[x].podkategorija + "</label></span>"
+			
+						}
+
+						if (construct) {
+							$('#podkategorije .naslov').show();
+							$('#podkategorije .insert').html(construct);
+							
+						};
+						
+						// sestavi x znak, če ga še ni
+
+					}
+					
+					if (gumb.siblings($('.delete')).length<=1) {
+						gumb.parent().append("<a class='delete' href='#'>X</a>");
+					}
+					
+					
+				},
+			  error: function () {
+					alert("Error !!");
+				}
+				});
+		}
+	
+		$(document).on('click', '#kategorije .delete', function(event){
+			event.preventDefault();
+			$(this).parent().siblings('.container').show();
+			$('#kategorije .delete').remove();
+			$('#kategorije .kategorija.all').prop('checked', true);
+			$('#podkategorije .insert').html('');
+			$('#podkategorije .naslov').hide();
+		})
+		
+	
+	
+
+
+
+	$('.novo').on({mouseenter: function() {
+		$(this).prev().addClass('hover')
+	},
+			mouseleave: function() {
+		$(this).prev().removeClass('hover')
+		}	
+	})
+
+
+		
+		
+	
+		jQuery('#datumod').datetimepicker({
+		
+			format:'d.m.Y',
+			formatDate:'d.m.Y',
+			dayOfWeekStart: 1,
+			timepicker: false,
+			 onShow:function( ct ){
+			   this.setOptions({
+				maxDate:jQuery('#datumdo').val()?jQuery('#datumdo').val():false
+			   })
+			  }
+		});
+		jQuery('#datumdo').datetimepicker({
+		
+			format:'d.m.Y',
+			formatDate:'d.m.Y',
+			timepicker:false,
+			dayOfWeekStart: 1,
+			 onShow:function( ct ){
+			   this.setOptions({
+				minDate:jQuery('#datumod').val()?jQuery('#datumod').val():false
+			   })
+			  }
+		});
+		$.datetimepicker.setLocale('sl');
+		
+
+		
+	
+	
+	
+		
+	var sestavine="";		
+		  
+		  $(".receptisplosno").on("click", function(e) {
+			  sestavine= $("#sestavine").val();
+			  if (sestavine!=""){
+				    var e = jQuery.Event( "keydown", { keyCode: 9 } );
+					$("#sestavine").trigger(e);
+			  }
+				fIzdelajLink();
+		  })
+		  
+		function preracunajPozicijoSestavin() {
+
+			selection=$('#as-selections-sestavine');
+			results=$('#as-results-sestavine');
+			
+			sirina=selection.width();
+			visina=selection.height();
+			
+			levo = selection.offset().left-8;
+			zgoraj = selection.offset().top+visina+12;
+
+			results.css({'left': levo, 'top': zgoraj});
+		
+		}
+			  
+ 		 $("#sestavine").autoSuggest(
+			"/inc/autocomplete-sestavine.asp", 
+			{preFill:sestavine,minChars: 3, emptyText:"", startText:"", neverSubmit:true, asHtmlID:"sestavine", dropdownEndOfBody:true,
+				afterSelectionAdd : function(element, item, currentSelections){
+					preracunajPozicijoSestavin();
+					$iskalec.flickity('resize');
+				},
+				onSelectionRemove : function(element, options) {
+					  if (options.fadeOut) {
+						element.fadeOut(options.fadeOut, function(){
+						  element.remove();
+						});
+					  } else {
+						element.remove()
+					  }
+						preracunajPozicijoSestavin();
+						$iskalec.flickity('resize');
+					  
+					}
+			}
+			).addClass('iskanje');
+		 
+		 $('#sestavine').on("click", function() {
+			preracunajPozicijoSestavin();	
+		})
+		
+	
+	})
+</script>
+
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+
+
+
+<!-- InstanceParam name="onload" type="text" value="" -->
+</head>
+
+<body onload="">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/sl_SI/sdk.js#xfbml=1&version=v12.0&appId=182018238801081&autoLogAppEvents=1" nonce="kleaXAyl"></script>
+<div id='ozadjeReklamaContainer'><div id="ozadjeReklama"><iframe id='banner16' name='banner16' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='1600' height='1200' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner16').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=16&kanal=recepti&kat=5&target=_blank&refresh=240&cb=0,4222921');});</script></div></div><div id='MegaContainer'><div id='Container' class='cf'>
+
+<div class="spinner-container">
+<div class="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div></div>
+
+<section id="glava_kulslo">
+<div id="glava_velika">
+<div id="glava_main" class="cf">
+
+
+<div class='glava'><a id='main-kulslo-logo' href='/'><img alt='logo kulinarika.net' class='logo-veliki' src='/grafika6/logotipi/logo2.png'><img alt='logo kulinarika.net' class='logo-mali' src='/grafika6/logotipi/logo-mali.png'></a></div><ul class='cf izpostavljeni Najnovejsi mobileslider'><li class='carousel-cell enNajnovejsi'><a href='/p/3/4364/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/4364/84-200x150.jpg' data-srcset='/slikerecepti/4364/84-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/4364/?d=0'>Super dobra jabolčna pita</a></p></li><li class='carousel-cell enNajnovejsi'><a href='/p/3/12221/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/12221/14-200x150.jpg' data-srcset='/slikerecepti/12221/14-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/12221/?d=0'>Marmorni kolač</a></p></li><li class='carousel-cell enNajnovejsi'><a href='/p/3/22765/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/22765/1-200x150.jpg' data-srcset='/slikerecepti/22765/1-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/22765/?d=0'>Potratna rolada</a></p></li><li class='carousel-cell enNajnovejsi'><a href='/p/3/11994/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/11994/6-200x150.jpg' data-srcset='/slikerecepti/11994/6-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/11994/?d=0'>Jota na najbolj enostaven način </a></p></li><li class='carousel-cell enNajnovejsi no-desktop'><a href='/p/3/4543/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/4543/13-200x150.jpg' data-srcset='/slikerecepti/4543/13-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/4543/?d=0'>Bela limonina pita</a></p></li><li class='carousel-cell enNajnovejsi no-desktop'><a href='/p/3/21731/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/21731/2-200x150.jpg' data-srcset='/slikerecepti/21731/2-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/21731/?d=0'>Jabolčno pecivo</a></p></li><li class='carousel-cell enNajnovejsi no-desktop'><a href='/p/3/13235/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/13235/3-200x150.jpg' data-srcset='/slikerecepti/13235/3-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/13235/?d=0'>Gobova juha s krompirjem</a></p></li><li class='carousel-cell enNajnovejsi no-desktop'><a href='/p/3/2032/?d=0' class='izpostavljeno image-wrap'><img alt='izpostavljeni recepti' src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-src='/slikerecepti/2032/4-200x150.jpg' data-srcset='/slikerecepti/2032/4-400x300.jpg 400w'></a><p class='ime single-line'><a class='izpostavljeno' href='/p/3/2032/?d=0'>Čajno pecivo Mignon</a></p></li></ul>
+
+</div>
+
+    
+
+
+
+  <nav id="glavni_menu" class="cf">
+			<ul>
+				<li><a  class='izbrano' href="/recepti/">Recepti</a></li>
+				<li><a  href="/vino/">Vino</a></li>
+				<li><a  href="/forum/">Forumi</a></li>
+				<li><a  href="/fotoalbumi/">Albumi</a></li>
+				<li><a  href="/zid/">Zid</a></li>
+				<li><a  href="/blogi/">Blogi</a></li>
+				<li><a  href="/zdravje/">Zdravo</a></li>
+				<li><a  href="/zanimivo/">Zanimivo</a></li>
+     			<li><a class="noborder" href="/iskanje/?datumi=tridni#novosti">Novosti</a></li>
+			</ul>
+	</nav>
+ </div>
+ <div class="landing">
+<header id="header-glava">
+
+	<div id="glavni_menu_small_container">
+          <a href="#menu" id="glavni_menu_toggle" class="hamburger_menu"><span></span></a>
+    </div>
+
+  
+    <div id="kategorijeMenu">
+        <ul>
+          <li class="gumbGlava"><a href="javascript:void(null);"  class="main">kategorije<span class='text'> receptov</span><span class="icon-down"></span></a>
+          	<ul  class="main-menu cf odpirac">
+                <li><a class="menu" href="/recepti/seznam/sladice/"><img alt="sladice" src="/grafika6/recepti18.png">Sladice</a></li>
+                <li><a class="menu" href="/recepti/seznam/zelenjavne-jedi/"><img alt="zelenjavne jedi" src="/grafika6/recepti21.png">Zelenjavne jedi</a></li>
+                <li><a class="menu" href="/recepti/seznam/testenine/"><img alt="testenine" src="/grafika6/recepti20.png">testenine</a></li>
+                <li><a class="menu" href="/recepti/seznam/solate/"><img alt="solate" src="/grafika6/recepti19.png">solate</a></li>
+                <li><a class="menu" href="/recepti/seznam/juhe-in-zakuhe/"><img alt="juhe in zakuhe" src="/grafika6/recepti05.png">juhe in zakuhe</a></li>
+                <li><a class="menu" href="/recepti/seznam/mesne-jedi/"><img alt="mesne jedi" src="/grafika6/recepti07.png">mesne jedi</a></li>
+                <li><a class="menu" href="/recepti/seznam/kruh/"><img alt="kruh" src="/grafika6/recepti06.png">Kruh</a></li>
+                <li><a class="menu" href="/recepti/seznam/prikuhe/"><img alt="prikuhe" src="/grafika6/recepti15.png">prikuhe</a></li>
+                <li><a class="menu" href="/recepti/seznam/priloge/"><img alt="priloge" src="/grafika6/recepti16.png">priloge</a></li> 
+                <li><a class="menu" href="/recepti/seznam/jajcne-jedi/"><img alt="jajčne jedi" src="/grafika6/recepti04.png">jajčne jedi</a></li>
+                <li><a class="menu zdravo" href="/recepti/seznam/?zdravo=1"><img alt="zdravo" src="/grafika6/recepti-zdravo.png"><span>zdravo</span></a></li>
+                <a class="vsekat" href="/recepti/#kategorije">Vse kategorije receptov</a>         
+            </ul>
+           </li>
+        </ul>
+    </div>
+    
+
+            <form autocomplete="off" id="FormIskanje" name="FormIskanje" action="/iskanje/" method="get">
+            <input name="splosno_besede" type="text" class="ogrodjeTextBox rounded" placeholder="ključne besede">
+            <label>
+              <input type="image" name="imageField" id="imageField" alt="iskanje" src="/grafika6/lupa.PNG" class="GlavaIskanjeLupa rounded">
+            </label>
+            
+            <div class="glavniIskalecMenu">
+            <div class="main-menu">
+            <p><a class="linki3" href="/recepti/seznam/?iskanje=1">Napredno iskanje po receptih</a></p><p><a class="linki3" href="/forumi/forum/?vec=1">Iskanje po forumih</a></p>
+            </div>
+            </div>
+            
+             </form>
+      
+    
+    <div id="mojaKulinarikaMenu">
+	<ul id="prijava-menu">
+    
+    
+    
+
+   
+    <li><a href="javascript:void(null);" id="menu-avatar-opener" class="main rounded" >
+    	
+		<span class='ime'>prijava</span>
+        
+        </a>
+        
+        <ul class="main-menu cf odpirac">
+            
+            <div class='flex'>
+            
+            <div class="cross" id="prijava_menu_toggle"></div>
+            
+            
+            
+			
+            <li id="mojakulslo-login">
+
+             <form action="/mojakulinarika/prijava/" method="post" name="prijava" id="form-prijava" class="form-dizajn1 cf">
+                 <div id="mojakulslo-login-wrapper" class="cf">
+                 <input type="hidden" name="portal" value="1">
+                    <label for="loginuser">Uporabnik:</label><input id="loginuser" name="uporabnik"  type="text"><br>
+                    <label for="loginpassword">Geslo:</label><input id="loginpassword" name="geslo" type="password"><br>
+				 </div>
+            
+            
+        
+       
+       		 <input name="Submit" type="submit"  class="submit" value="Prijava">
+        
+ 		
+        	 </form>
+         	  </li>
+       	  <a href="/mojakulinarika/pozabljeno/" class="noborder">Pozabljeno geslo</a>
+          <a class="noborder" href="/mojakulinarika/vpis/">Nov uporabnik</a>
+  
+
+            
+            
+            </div>
+        </ul>
+    </li>
+    </ul>
+</div>
+    
+
+
+
+
+</header>
+</div>
+</section>
+        <div id="glavaPasica" class="cf">
+        <iframe id='banner1' name='banner1' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='980' height='250' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner1').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=1&kanal=recepti&kat=5&target=_blank&refresh=240&cb=0,1007151');});</script> 
+        </div>
+
+<div id="bodyContainer" class="cf">
+
+    <div id="breadcrumbs">
+          <div id="breadcrumbsPortal">
+               
+          </div>
+        <!-- InstanceBeginEditable name="breadcrumbs" -->
+
+  <p class="breadcrumbs"><a href="/">domov</a> » <a href="/recepti.asp">recepti</a> »<span class="trenutno"> seznam receptov
+  
+  
+  
+  </span></p>
+<!-- InstanceEndEditable -->
+    
+    </div>
+<main id="vsebina" class="cf">
+<!-- InstanceBeginEditable name="Main" -->
+ 
+
+
+<div id="recepti" class="seznam main-left">
+
+  <h1>Seznam receptov
+  
+  
+  
+  </h1>
+  
+
+  
+  <div id="iskanje-box">
+  <form action="/recepti/seznam/" method="get" name="hladilnik" class="form-dizajn1">
+  <div class="odpirac"></div>
+  <div id="iskalec" class="hide">
+    <div class="carousel-cell">
+	<p><tr class='iskanje-vrsta' id='sestavine-vrsta'><td class='formular'><span class='sestavinenapis'>Sestavine<span class='mala2'> (ločene z vejico)<span></span></td><td ><input name='sestavine' id='sestavine' type='text'></td></p>
+	<table id="tabela-seznam" class="carousel-cell SplosnaTabela ">
+      <tr class="iskanje-vrsta " id="besede-vrsta">
+        <td class="formular">Besede</td>
+        <td ><input class="splosno formfield" name="besede" type="text" value="" /></td>
+      </tr>
+      <tr class="iskanje-vrsta" id="imerecepta-vrsta">
+        <td class="formular">Ime recepta</td>
+        <td ><input class="formfield" name="imerecepta" type="text" value="" /></td>
+      </tr>
+      
+      <tr class="iskanje-vrsta" id="avtor-vrsta">
+        <td class="formular">Avtor recepta</td>
+        <td ><input class="formfield" name="avtor" type="text" value="" /></td>
+      </tr>
+      
+      </tr>
+	  
+	  		 <tr class='iskanje-vrsta' id='slike-vrsta'><td class='formular'><label for='slika'>S slikami</label></td><td ><input name='slika' type='checkbox' id='slika' class='formfield' value='1'></td></tr><tr class='iskanje-vrsta' id='video-vrsta'><td class='formular'><label for='video'>Video recepti</label></td><td ><input name='video' type='checkbox' id='video' class='formfield' value='1'></td></tr><tr class='iskanje-vrsta' id='zdravo-vrsta'><td class='formular'><label for='zdravo'>Zdravi</label></td><td ><input name='zdravo' type='checkbox' id='zdravo' class='formfield' value='1'></td></tr></table>
+			<p>
+			<select name="datum_kriterij" id="datum_kriterij" class="formfield">
+              <option value="" >objava</option>
+              <option value="mnenja" >mnenja</option>
+              <option value="slike" >slike</option>
+            </select>
+			<select name="datumi" id="datumi" class="formfield">
+								<option value="" >vsi datumi</option>
+                                  <option value="customdate" >izbrani datum</option>
+                                  <option value="24ur" >zadnjih 24 ur</option>
+								 <option value="tridni" >zadnjih 3 dni</option>
+                                  <option value="teden" >zadnjega tedna</option>
+									 
+                                  <option value="mesec" >zadnjega meseca</option>
+                                     
+                                  <option value="novo" >od zadnjega obiska</option>
+									  
+                                  <option value="brisalec" >od zadnjega brisanja</option>
+
+						</select>
+			</p>
+			
+            <span id="datumform"><input name="datumod" id="datumod" class="formfield" type="text" value="" /> in <input name="datumdo" id="datumdo" type="text" value="" /></span>		
+			<input name="sort" type="hidden" value="privzeto" />
+              <input name="nacin" type="hidden" value="desc" />
+							  
+				  
+		</div>		  
+
+        
+                
+          <div class='iskanje-vrsta carousel-cell' id='kategorije'><div class='clearfix'><h3>Kategorije</h3><span class='container kat0'><input type='radio' class='kategorija all' id='katall' name='kategorija' value=''><label for=''>Vse</label></span><span class='container  kat1'><input type='radio' class='kategorija' name='kategorija' id='kat1' value='1'><label for='kat1'>eksotika</label></span><span class='container  kat2'><input type='radio' class='kategorija' name='kategorija' id='kat2' value='2'><label for='kat2'>enolončnice</label></span><span class='container  kat3'><input type='radio' class='kategorija' name='kategorija' id='kat3' value='3'><label for='kat3'>gobje jedi</label></span><span class='container  kat4'><input type='radio' class='kategorija' name='kategorija' id='kat4' value='4'><label for='kat4'>jajčne jedi</label></span><span class='container  kat5'><input type='radio' class='kategorija' name='kategorija' id='kat5' value='5' CHECKED ><label for='kat5'>juhe in zakuhe</label></span><span class='container  kat6'><input type='radio' class='kategorija' name='kategorija' id='kat6' value='6'><label for='kat6'>kruh</label></span><span class='container  kat7'><input type='radio' class='kategorija' name='kategorija' id='kat7' value='7'><label for='kat7'>mesne jedi</label></span><span class='container  kat8'><input type='radio' class='kategorija' name='kategorija' id='kat8' value='8'><label for='kat8'>morska hrana</label></span><span class='container  kat9'><input type='radio' class='kategorija' name='kategorija' id='kat9' value='9'><label for='kat9'>napitki</label></span><span class='container  kat10'><input type='radio' class='kategorija' name='kategorija' id='kat10' value='10'><label for='kat10'>omake</label></span><span class='container  kat11'><input type='radio' class='kategorija' name='kategorija' id='kat11' value='11'><label for='kat11'>ostale jedi</label></span><span class='container  kat12'><input type='radio' class='kategorija' name='kategorija' id='kat12' value='12'><label for='kat12'>otroška hrana</label></span><span class='container  kat13'><input type='radio' class='kategorija' name='kategorija' id='kat13' value='13'><label for='kat13'>ozimnica</label></span><span class='container  kat14'><input type='radio' class='kategorija' name='kategorija' id='kat14' value='14'><label for='kat14'>predjedi</label></span><span class='container  kat15'><input type='radio' class='kategorija' name='kategorija' id='kat15' value='15'><label for='kat15'>prikuhe</label></span><span class='container  kat16'><input type='radio' class='kategorija' name='kategorija' id='kat16' value='16'><label for='kat16'>priloge</label></span><span class='container  kat17'><input type='radio' class='kategorija' name='kategorija' id='kat17' value='17'><label for='kat17'>sirove jedi</label></span><span class='container  kat18'><input type='radio' class='kategorija' name='kategorija' id='kat18' value='18'><label for='kat18'>sladice</label></span><span class='container  kat19'><input type='radio' class='kategorija' name='kategorija' id='kat19' value='19'><label for='kat19'>solate</label></span><span class='container  kat20'><input type='radio' class='kategorija' name='kategorija' id='kat20' value='20'><label for='kat20'>testenine</label></span><span class='container  kat22'><input type='radio' class='kategorija' name='kategorija' id='kat22' value='22'><label for='kat22'>žar</label></span><span class='container  kat21'><input type='radio' class='kategorija' name='kategorija' id='kat21' value='21'><label for='kat21'>zelenjavne jedi</label></span></div><div id='podkategorije'><h3 class='naslov'>Podkategorije</h3><div class='insert'></div></div></div><div class='iskanje-vrsta carousel-cell' id='cas'><h3>Čas priprave in kuhanja</h3><span class='container'><input type='radio' name='cas' id='cas00' value='' CHECKED ><label for='cas00'>ni pomembno</label></span><span class='container'><input type='radio' name='cas' ID='cas5' value='5'><label for='cas5'>do 5 minut</label></span><span class='container'><input type='radio' name='cas' ID='cas15' value='15'><label for='cas15'>do 15 minut</label></span><span class='container'><input type='radio' name='cas' ID='cas30' value='30'><label for='cas30'>do 30 minut</label></span><span class='container'><input type='radio' name='cas' ID='cas45' value='45'><label for='cas45'>do 45 minut</label></span><span class='container'><input type='radio' name='cas' ID='cas60' value='60'><label for='cas60'>do 1 ura</label></span><span class='container'><input type='radio' name='cas' ID='cas75' value='75'><label for='cas75'>do 1 ura in 15 minut</label></span><span class='container'><input type='radio' name='cas' ID='cas90' value='90'><label for='cas90'>do 1 ura in pol</label></span><span class='container'><input type='radio' name='cas' ID='cas120' value='120'><label for='cas120'>do 2 uri</label></span><span class='container'><input type='radio' name='cas' ID='cas150' value='150'><label for='cas150'>do 2 uri in pol</label></span><span class='container'><input type='radio' name='cas' ID='cas180' value='180'><label for='cas180'>do 3 ure</label></span><span class='container'><input type='radio' name='cas' ID='cas240' value='240'><label for='cas240'>do 4 ure</label></span></div><div class='iskanje-vrsta carousel-cell' id='priloznost'><h3>Priložnost</h3><span class='container'><input type='radio' name='priloznost' id='priloznost00' value='' CHECKED ><label for='priloznost00'>ni pomembno</label></span><span class='container'><input type='radio' name='priloznost' id='priloznost2' value='2'><label for='priloznost2'>božič</label></span><span class='container'><input type='radio' name='priloznost' id='priloznost1' value='1'><label for='priloznost1'>martinovo</label></span><span class='container'><input type='radio' name='priloznost' id='priloznost9' value='9'><label for='priloznost9'>miklavževo</label></span><span class='container'><input type='radio' name='priloznost' id='priloznost6' value='6'><label for='priloznost6'>novo leto</label></span><span class='container'><input type='radio' name='priloznost' id='priloznost7' value='7'><label for='priloznost7'>piknik</label></span><span class='container'><input type='radio' name='priloznost' id='priloznost3' value='3'><label for='priloznost3'>pust</label></span><span class='container'><input type='radio' name='priloznost' id='priloznost8' value='8'><label for='priloznost8'>rojstni dan</label></span><span class='container'><input type='radio' name='priloznost' id='priloznost4' value='4'><label for='priloznost4'>valentinovo</label></span><span class='container'><input type='radio' name='priloznost' id='priloznost5' value='5'><label for='priloznost5'>velika noč</label></span></div><div class='iskanje-vrsta carousel-cell' id='priprava'><h3>Priprava</h3><span class='container'><input type='radio' name='priprava' id='priprava00' value='' CHECKED ><label for='priprava00'>ni pomembno</label></span><span class='container'><input type='radio' name='priprava' id='priprava4' value='4'><label for='priprava4'>cvrtje</label></span><span class='container'><input type='radio' name='priprava' id='priprava5' value='5'><label for='priprava5'>dušenje</label></span><span class='container'><input type='radio' name='priprava' id='priprava12' value='12'><label for='priprava12'>flambiranje</label></span><span class='container'><input type='radio' name='priprava' id='priprava10' value='10'><label for='priprava10'>gratiniranje</label></span><span class='container'><input type='radio' name='priprava' id='priprava1' value='1'><label for='priprava1'>kuhanje</label></span><span class='container'><input type='radio' name='priprava' id='priprava11' value='11'><label for='priprava11'>mariniranje</label></span><span class='container'><input type='radio' name='priprava' id='priprava2' value='2'><label for='priprava2'>pečenje</label></span><span class='container'><input type='radio' name='priprava' id='priprava3' value='3'><label for='priprava3'>praženje</label></span><span class='container'><input type='radio' name='priprava' id='priprava6' value='6'><label for='priprava6'>soparjenje</label></span><span class='container'><input type='radio' name='priprava' id='priprava9' value='9'><label for='priprava9'>vlaganje</label></span><span class='container'><input type='radio' name='priprava' id='priprava8' value='8'><label for='priprava8'>zamrzovanje</label></span><span class='container'><input type='radio' name='priprava' id='priprava7' value='7'><label for='priprava7'>žar</label></span></div><div class='iskanje-vrsta carousel-cell' id='prehrana'><h3>Način prehrane</h3><span class='container'><input type='radio' name='prehrana' id='prehrana00' value='' CHECKED ><label for='prehrana00'>ni pomembno</label></span><span class='container'><input type='radio' name='prehrana' id='prehrana3' value='3'><label for='prehrana3'>brez glutena</label></span><span class='container'><input type='radio' name='prehrana' id='prehrana7' value='7'><label for='prehrana7'>brez laktoze</label></span><span class='container'><input type='radio' name='prehrana' id='prehrana4' value='4'><label for='prehrana4'>diabetes / nizek GI</label></span><span class='container'><input type='radio' name='prehrana' id='prehrana8' value='8'><label for='prehrana8'>LCHF</label></span><span class='container'><input type='radio' name='prehrana' id='prehrana5' value='5'><label for='prehrana5'>ločevalna dieta</label></span><span class='container'><input type='radio' name='prehrana' id='prehrana6' value='6'><label for='prehrana6'>presna prehrana</label></span><span class='container'><input type='radio' name='prehrana' id='prehrana2' value='2'><label for='prehrana2'>veganstvo</label></span><span class='container'><input type='radio' name='prehrana' id='prehrana1' value='1'><label for='prehrana1'>vegetarijanstvo</label></span></div><div class='iskanje-vrsta carousel-cell' id='letnicas'><h3>Letni čas</h3><span class='container'><input type='radio' name='letnicas' id='letnicas00' value='' CHECKED ><label for='letnicas00'>ni pomembno</label></span><span class='container'><input type='radio' name='letnicas' id='letnicas3' value='3'><label for='letnicas3'>jesen</label></span><span class='container'><input type='radio' name='letnicas' id='letnicas2' value='2'><label for='letnicas2'>poletje</label></span><span class='container'><input type='radio' name='letnicas' id='letnicas1' value='1'><label for='letnicas1'>pomlad</label></span><span class='container'><input type='radio' name='letnicas' id='letnicas4' value='4'><label for='letnicas4'>zima</label></span></div><div class='iskanje-vrsta carousel-cell' id='vrstajedi'><h3>Vrsta jedi</h3><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi00' value='' CHECKED ><label for='vrstajedi00'>ni pomembno</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi8' value='8'><label for='vrstajedi8'>enolončnice</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi2' value='2'><label for='vrstajedi2'>glavne jedi</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi1' value='1'><label for='vrstajedi1'>hladne predjedi</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi5' value='5'><label for='vrstajedi5'>juhe</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi9' value='9'><label for='vrstajedi9'>namazi</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi6' value='6'><label for='vrstajedi6'>napitki</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi10' value='10'><label for='vrstajedi10'>omake</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi13' value='13'><label for='vrstajedi13'>ostalo</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi11' value='11'><label for='vrstajedi11'>prikuhe</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi12' value='12'><label for='vrstajedi12'>priloge</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi3' value='3'><label for='vrstajedi3'>sladice</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi7' value='7'><label for='vrstajedi7'>solate</label></span><span class='container'><input type='radio' name='vrstajedi' id='vrstajedi4' value='4'><label for='vrstajedi4'>tople predjedi</label></span></div><div class='iskanje-vrsta carousel-cell' id='skupinajedi'><h3>Skupina jedi</h3><span class='container'><input type='radio' name='skupinajedi' id='skupinajedi00' value=''><label for='skupinajedi00'>ni pomembno</label></span><span class='container'><input type='radio' name='skupinajedi' id='skupinajedi10' value='10'><label for='skupinajedi10'>jajčne jedi</label></span><span class='container'><input type='radio' name='skupinajedi' id='skupinajedi11' value='11'><label for='skupinajedi11'>jedi s sirom</label></span><span class='container'><input type='radio' name='skupinajedi' id='skupinajedi7' value='7'><label for='skupinajedi7'>kruh</label></span><span class='container'><input type='radio' name='skupinajedi' id='skupinajedi1' value='1'><label for='skupinajedi1'>mesne jedi</label></span><span class='container'><input type='radio' name='skupinajedi' id='skupinajedi14' value='14'><label for='skupinajedi14'>mlečne jedi</label></span><span class='container'><input type='radio' name='skupinajedi' id='skupinajedi6' value='6'><label for='skupinajedi6'>morske jedi</label></span><span class='container'><input type='radio' name='skupinajedi' id='skupinajedi13' value='13'><label for='skupinajedi13'>rižote</label></span><span class='container'><input type='radio' name='skupinajedi' id='skupinajedi3' value='3'><label for='skupinajedi3'>testenine</label></span><span class='container'><input type='radio' name='skupinajedi' id='skupinajedi2' value='2'><label for='skupinajedi2'>zelenjavne jedi</label></span></div><div class='iskanje-vrsta carousel-cell' id='vrstaobroka'><h3>Vrsta obroka</h3><span class='container'><input type='radio' name='vrstaobroka' id='vrstaobroka00' value='' CHECKED ><label for='vrstaobroka00'>ni pomembno</label></span><span class='container'><input type='radio' name='vrstaobroka' id='vrstaobroka2' value='2'><label for='vrstaobroka2'>kosilo</label></span><span class='container'><input type='radio' name='vrstaobroka' id='vrstaobroka3' value='3'><label for='vrstaobroka3'>malica</label></span><span class='container'><input type='radio' name='vrstaobroka' id='vrstaobroka8' value='8'><label for='vrstaobroka8'>prigrizki</label></span><span class='container'><input type='radio' name='vrstaobroka' id='vrstaobroka5' value='5'><label for='vrstaobroka5'>slovesnost</label></span><span class='container'><input type='radio' name='vrstaobroka' id='vrstaobroka4' value='4'><label for='vrstaobroka4'>večerja</label></span><span class='container'><input type='radio' name='vrstaobroka' id='vrstaobroka1' value='1'><label for='vrstaobroka1'>zajtrk</label></span></div>
+    
+  </form>
+  
+ 	</div>
+	
+	<input name='receptisplosno' type='button' class='submit receptisplosno hide' value='Iskanje' />
+	
+	</div>
+    
+
+
+  
+
+<div class='clearfix'></div><ul id='iskanje-uporabljeno'><li class='link'><span class='pojem' data-cell='2'><span class='bold'>&#8593;</span> juhe in zakuhe</span><a class='remove' data-polje='kategorija'>x</a></li></ul><form action='' name='form-sort' method='get' id='sortRezultatov'><select name='sortiranje' onChange="MM_jumpMenu('parent',this,0)"><option value='/recepti/seznam/juhe-in-zakuhe/?'>privzeto</option><option value='/recepti/seznam/juhe-in-zakuhe/?sort=pomembnost&amp;nacin=desc&'>priljubljenost</option><option value='/recepti/seznam/juhe-in-zakuhe/?sort=datum&amp;nacin=desc&'>novejši najprej</option><option value='/recepti/seznam/juhe-in-zakuhe/?sort=ImeRecepta&amp;nacin=asc&'>ime od A do Ž</option><option value='/recepti/seznam/juhe-in-zakuhe/?sort=ImeRecepta&amp;nacin=desc&'>ime od Ž do A</option><option value='/recepti/seznam/juhe-in-zakuhe/?sort=fotografije&amp;nacin=desc&'>datum fotografij</option><option value='/recepti/seznam/juhe-in-zakuhe/?sort=mnenja&amp;nacin=desc&'>datum mnenj</option></select></form><section id='recepti_grid' class='cf'><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/'><div class='image-wrap  video'><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/21290/1-200x150.jpg 200w, /slikerecepti/21290/1-400x300.jpg 400w, /slikerecepti/21290/1.jpg 640w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/ostale-juhe/cmocki-sarenke-v-zametni-bucni-juhi/21290/'>Cmočki šarenke v žametni bučni juhi</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/2g2raembc96gkwqp/'>Spar Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='45 minut' title='45 minut'><span class='cas'>45 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: ostale juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/ostale-juhe/spargljeva-kremna-juha-z-zlicniki-iz-sunke-in-cemaza/21315/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/21315/1-200x150.jpg 200w, /slikerecepti/21315/1-400x300.jpg 400w, /slikerecepti/21315/1.jpg 900w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/ostale-juhe/spargljeva-kremna-juha-z-zlicniki-iz-sunke-in-cemaza/21315/'>Špargljeva kremna juha z žličniki iz šunke in čemaža</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/yfcw2z73emqjbiek/'>HOFER Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='45 minut' title='45 minut'><span class='cas'>45 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: ostale juhe</p></div></article><div id="banner27aContainer"><iframe id='banner27a' name='banner27' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='640' height='360' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner27a').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=27&kanal=recepti&kat=5&target=_blank&refresh=240&cb=0,3920192');});</script></div><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/ostale-juhe/skutn-ca/21287/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/21287/2-200x150.jpg 200w, /slikerecepti/21287/2-400x300.jpg 400w, /slikerecepti/21287/2.jpg 900w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/ostale-juhe/skutn-ca/21287/'>Skutn'ca</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/oi9sq7187jzp7ic6/'>ZELENE DOLINE</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='15 minut' title='15 minut'><span class='cas'>15 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: ostale juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/jusne-zakuhe/domaca-ribana-kasa/20825/'><div class='image-wrap '><img class='nislike ' src='/grafika6/ni-slike-manjsa.png'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/jusne-zakuhe/domaca-ribana-kasa/20825/'>Domača ribana kaša</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/dad4lsnc3560jo92/'>Žito</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='30 minut' title='30 minut'><span class='cas'>30 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: jušne zakuhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/hladne-juhe/hladna-kumaricna-juha-z-morskim-nabodalom/21977/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/21977/1-200x150.jpg 200w, /slikerecepti/21977/1-400x300.jpg 400w, /slikerecepti/21977/1.jpg 1200w'></div></a><h3 class='single-line'><img class='ikona-zdrav-recept tiptip' src='/grafika6/ikona-zdravo.png' title='Bolj zdrava jed' /><a href='/recepti/juhe-in-zakuhe/hladne-juhe/hladna-kumaricna-juha-z-morskim-nabodalom/21977/'>Hladna kumarična juha z morskim nabodalom</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/yfcw2z73emqjbiek/'>HOFER Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='30 minut' title='30 minut'><span class='cas'>30 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: hladne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/bucna-juhica-z-ingverjem/22080/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22080/1-200x150.jpg 200w, /slikerecepti/22080/1-400x300.jpg 400w, /slikerecepti/22080/1.jpg 1200w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/bucna-juhica-z-ingverjem/22080/'>Bučna juhica z ingverjem</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/yfcw2z73emqjbiek/'>HOFER Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='30 minut' title='30 minut'><span class='cas'>30 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: zelenjavne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/hladne-juhe/kumaricin-gazpacho-z-baziliko/22011/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22011/1-200x150.jpg 200w, /slikerecepti/22011/1-400x300.jpg 400w, /slikerecepti/22011/1.jpg 800w'></div></a><h3 class='single-line'><img class='ikona-zdrav-recept tiptip' src='/grafika6/ikona-zdravo.png' title='Bolj zdrava jed' /><a href='/recepti/juhe-in-zakuhe/hladne-juhe/kumaricin-gazpacho-z-baziliko/22011/'>Kumaričin gazpacho z baziliko</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/yfcw2z73emqjbiek/'>HOFER Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='4+ ur' title='4+ ur'><span class='cas'>4+ ur</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: hladne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/hladne-juhe/hladna-paradiznikova-juha/22044/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22044/1-200x150.jpg 200w, /slikerecepti/22044/1-400x300.jpg 400w, /slikerecepti/22044/1.jpg 800w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/hladne-juhe/hladna-paradiznikova-juha/22044/'>Hladna paradižnikova juha</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/yfcw2z73emqjbiek/'>HOFER Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='4 ure' title='4 ure'><span class='cas'>4 ure</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: hladne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/ostale-juhe/kremna-juha-iz-sampinjonov-spinace-in-lece-po-receptu-taja-s-goods/22356/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22356/1-200x150.jpg 200w, /slikerecepti/22356/1-400x300.jpg 400w, /slikerecepti/22356/1.jpg 1200w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/ostale-juhe/kremna-juha-iz-sampinjonov-spinace-in-lece-po-receptu-taja-s-goods/22356/'>Kremna juha iz šampinjonov, špinače in leče po receptu Taja’s goods</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/yfcw2z73emqjbiek/'>HOFER Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='45 minut' title='45 minut'><span class='cas'>45 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: ostale juhe</p></div></article><div id="banner27bContainer"><iframe id='banner27b' name='banner27' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='640' height='360' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner27b').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=27&kanal=recepti&kat=5&target=_blank&refresh=240&cb=0,127894');});</script></div><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/korenckova-juha-z-jajcem-/22255/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22255/2-200x150.jpg 200w, /slikerecepti/22255/2-400x300.jpg 400w, /slikerecepti/22255/2.jpg 700w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/korenckova-juha-z-jajcem-/22255/'>Korenčkova juha z jajcem </a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/yfcw2z73emqjbiek/'>HOFER Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='30 minut' title='30 minut'><span class='cas'>30 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: zelenjavne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/juha-iz-jabolk-in-zelene-s-cesnovimi-krusnimi-kockami/22128/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22128/1-200x150.jpg 200w, /slikerecepti/22128/1-400x300.jpg 400w, /slikerecepti/22128/1.jpg 1200w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/juha-iz-jabolk-in-zelene-s-cesnovimi-krusnimi-kockami/22128/'>Juha iz jabolk in zelene s česnovimi krušnimi kockami</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/yfcw2z73emqjbiek/'>HOFER Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='1 ura' title='1 ura'><span class='cas'>1 ura</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: zelenjavne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/juha-iz-rdecega-zelja-s-hrustljavo-slanino/22129/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22129/1-200x150.jpg 200w, /slikerecepti/22129/1-400x300.jpg 400w, /slikerecepti/22129/1.jpg 1200w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/juha-iz-rdecega-zelja-s-hrustljavo-slanino/22129/'>Juha iz rdečega zelja s hrustljavo slanino</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/yfcw2z73emqjbiek/'>HOFER Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='45 minut' title='45 minut'><span class='cas'>45 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: zelenjavne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/buckino-porova-juha-s-kozjim-sirom/22293/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22293/1-200x150.jpg 200w, /slikerecepti/22293/1-400x300.jpg 400w, /slikerecepti/22293/1.jpg 700w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/buckino-porova-juha-s-kozjim-sirom/22293/'>Bučkino-porova juha s kozjim sirom</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/yfcw2z73emqjbiek/'>HOFER Slovenija</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='30 minut' title='30 minut'><span class='cas'>30 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: zelenjavne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/mesne-juhe/mlejcna-krumsova-zupa-z-ajdovo-kaso-pa-sparglji/22503/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22503/1-200x150.jpg 200w, /slikerecepti/22503/1-400x300.jpg 400w, /slikerecepti/22503/1.jpg 1400w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/mesne-juhe/mlejcna-krumsova-zupa-z-ajdovo-kaso-pa-sparglji/22503/'>Mlejčna krumšova župa z ajdovo kašo pa šparglji</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/Ave_/'>Ave_</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='1 ura in pol' title='1 ura in pol'><span class='cas'>1 ura 30 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: mesne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/mesne-juhe/krumsova-zupa/22493/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22493/1-200x150.jpg 200w, /slikerecepti/22493/1-400x300.jpg 400w, /slikerecepti/22493/1.jpg 1400w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/mesne-juhe/krumsova-zupa/22493/'>Krumšova župa</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/Ave_/'>Ave_</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='1 ura in pol' title='1 ura in pol'><span class='cas'>1 ura 30 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: mesne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/gosta-korenckova-juha-s-pure-svedri-in-ingverjem/22688/'><div class='image-wrap  video'><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22688/1-200x150.jpg 200w, /slikerecepti/22688/1-400x300.jpg 400w, /slikerecepti/22688/1.jpg 1077w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/gosta-korenckova-juha-s-pure-svedri-in-ingverjem/22688/'>Gosta korenčkova juha s Pure svedri in ingverjem</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/6v075hurhlaakr0x/'>Pekarna Pečjak</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='30 minut' title='30 minut'><span class='cas'>30 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: zelenjavne juhe</p></div></article><div id="banner27cContainer"><iframe id='banner27c' name='banner27' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='640' height='360' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner27c').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=27&kanal=recepti&kat=5&target=_blank&refresh=240&cb=0,5137448');});</script></div><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/ostale-juhe/ribja-juha-s-testeninami/22716/'><div class='image-wrap  video'><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22716/1-200x150.jpg 200w, /slikerecepti/22716/1-400x300.jpg 400w, /slikerecepti/22716/1.jpg 1200w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/ostale-juhe/ribja-juha-s-testeninami/22716/'>Ribja juha s testeninami</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/6v075hurhlaakr0x/'>Pekarna Pečjak</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='30 minut' title='30 minut'><span class='cas'>30 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: ostale juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/mesne-juhe/piscancja-juha-s-tortelini/22698/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22698/2-200x150.jpg 200w, /slikerecepti/22698/2-400x300.jpg 400w, /slikerecepti/22698/2.jpg 1200w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/mesne-juhe/piscancja-juha-s-tortelini/22698/'>Piščančja juha s tortelini</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/6v075hurhlaakr0x/'>Pekarna Pečjak</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='1 ura' title='1 ura'><span class='cas'>1 ura</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: mesne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/hladne-juhe/mandljeva-juha-ajoblanco/22718/'><div class='image-wrap  video'><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22718/1-200x150.jpg 200w, /slikerecepti/22718/1-400x300.jpg 400w, /slikerecepti/22718/1.jpg 1070w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/hladne-juhe/mandljeva-juha-ajoblanco/22718/'>Mandljeva juha ajoblanco</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/6v075hurhlaakr0x/'>Pekarna Pečjak</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='2 uri in pol' title='2 uri in pol'><span class='cas'>2 uri 30 min</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: hladne juhe</p></div></article><article class='en_recept clearfix'><a class='fotka' href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/jesenska-juhica-s-kvinojo/22747/'><div class='image-wrap '><img src='/grafika7/slika-se-nalaga-manjsa.png' class='lazyload' data-sizes='auto' data-srcset='/slikerecepti/22747/1-200x150.jpg 200w, /slikerecepti/22747/1-400x300.jpg 400w, /slikerecepti/22747/1.jpg 1333w'></div></a><h3 class='single-line'><a href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/jesenska-juhica-s-kvinojo/22747/'>Jesenska juhica s kvinojo</a></h3><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/qd333tjuvmvpww8c/'>Malinca Nastja</a>&#160;</span><div class='recept_vsebina1'><p class='tezavnost'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'><img alt='Recept še ni bil ocenjen'  src='/grafika6/ikona-ocena-prazna.png' class='tiptip' title='Recept še ni bil ocenjen'></p><p class='cas'><img class='ura' src='/grafika6/ikona-ura.png' alt='1 ura' title='1 ura'><span class='cas'>1 ura</span></p><p class='kategorija no-mobile-640'>juhe in zakuhe: zelenjavne juhe</p></div></article>
+<script type="text/javascript">
+
+$(function() {
+	$(window).on('load resize', function () {
+
+		function fBannerIskanjeOglas(varID) {
+		
+			var container = varID + 'Container'
+		
+		    iFrameResize({checkOrigin:false}, '#' + varID + '');
+		
+			if ($('#' + container + ' iframe').length > 0) {
+				/*html5 banner with video*/
+				var width = $('#'+ container +'').width();
+				// scale = width * 0.001028125;
+				if (width < 640)
+					scale = width * 0.001568125;
+				else
+					scale = 1;
+
+				if (scale > 1)
+					scale = 1;
+
+				$('#' + container + ' iframe').css({'transform':'scale('+scale+')'});
+				
+				setTimeout(function(){ 
+					if ($('#'+ varID + '').height() > 0)
+					{
+						$('#'+ container +'').css({'height':(scale*360+25)+'px', 'display':'block'});	
+					}
+					else
+						$('#' + container + '').css({'height':'0px', 'display':'block'});	
+				 }, 200);
+				 
+				 
+				
+			}
+		
+		}
+		
+		fBannerIskanjeOglas('banner27a');
+		fBannerIskanjeOglas('banner27b');
+		fBannerIskanjeOglas('banner27c');
+		
+	})
+})
+
+</script></section><div class=' navigacija cf navigacija-flat'><form><div class='jumper'><span class='strani'>Stran: </span><select class='select' onchange="MM_jumpMenu('parent',this)"><option value='/recepti/seznam/juhe-in-zakuhe/?offset=0' selected>1</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=20'>2</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=40'>3</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=60'>4</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=80'>5</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=100'>6</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=120'>7</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=140'>8</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=160'>9</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=180'>10</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=200'>11</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=220'>12</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=240'>13</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=260'>14</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=280'>15</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=300'>16</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=320'>17</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=340'>18</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=360'>19</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=380'>20</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=400'>21</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=420'>22</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=440'>23</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=460'>24</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=480'>25</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=500'>26</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=520'>27</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=540'>28</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=560'>29</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=580'>30</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=600'>31</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=620'>32</option><option value='/recepti/seznam/juhe-in-zakuhe/?offset=640'>33</option></select></div><span class='disabled smerniki nazaj'>«</span><span class='current mobile'>1</span><a class='nav middle ' href='/recepti/seznam/juhe-in-zakuhe/?offset=20'>2</a><a class='nav middle ' href='/recepti/seznam/juhe-in-zakuhe/?offset=40'>3</a><a class='nav middle ' href='/recepti/seznam/juhe-in-zakuhe/?offset=60'>4</a><a class='nav middle ' href='/recepti/seznam/juhe-in-zakuhe/?offset=80'>5</a><a class='nav middle ' href='/recepti/seznam/juhe-in-zakuhe/?offset=100'>6</a><a class='nav middle ' href='/recepti/seznam/juhe-in-zakuhe/?offset=120'>7</a><span class="pike">…</span><a class='nav mobile' href='/recepti/seznam/juhe-in-zakuhe/?offset=640'>33</a><a class="smerniki naprej" title="naslednja stran" href='/recepti/seznam/juhe-in-zakuhe/?offset=20'>»</a></form></div><p class="navigacijazg">Število receptov: 656, prikazujem recepte  od 1 do 20</p></div>
+		
+<!-- InstanceEndEditable -->
+<section id="servisniBlok" class="recepti">
+<!-- InstanceBeginEditable name="neboticnik" -->
+
+<div id='nadOglas'>
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="popup-pravila">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Pogoji sodelovanja v nagradni igri</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body en_clanek"></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="popup-nagrade">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Več o nagradni igri</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body en_clanek"></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="popup-nagrade-old">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>Več o potekli nagradni igri</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body en_clanek"></div>
+    
+    </div>
+
+
+
+    <div class="highslide-html-content highslide-my-standard-popup" id="popup-sponzor">
+        <div class="highslide-header">
+        
+                             <div class="FotoAlbumPremakniSliko_handle">			
+                        <div class="highslide-move" onclick="return false">
+                        
+                         
+                        <span><a href="#" onclick="return hs.close(this)">✕</a></span><div class='highslide-heading'>O pokrovitelju nagradne igre</div>
+                        
+                        </div>
+              </div>
+        
+        </div>
+        <div class="highslide-body en_clanek"></div>
+    
+    </div>
+
+</div><aside class='info-kuha cf'><h2>Kaj se danes kuha</h2><p><span><a href='/iskanje/?splosno_besede=roladice v omaki' title='13 zadetkov'>roladice v omaki</a></span> / <span><a href='/iskanje/?splosno_besede=jedi z jogurtom' title='222 zadetkov'>jedi z jogurtom</a></span> / <span><a href='/iskanje/?splosno_besede=rolada brez moke in jajc' title='1 zadetek'>rolada brez moke in jajc</a></span> / <span><a href='/iskanje/?splosno_besede=sv.ribica v omaki' title='26 zadetkov'>sv.ribica v omaki</a></span> / <span><a href='/iskanje/?splosno_besede=krofi bi' title='105 zadetkov'>krofi bi</a></span> / <span><a href='/iskanje/?splosno_besede=fileti som' title='1 zadetek'>fileti som</a></span> / <span><a href='/iskanje/?splosno_besede=svedski krompir' title='1 zadetek'>svedski krompir</a></span> / <span><a href='/iskanje/?splosno_besede=mufini z srcem' title='1 zadetek'>mufini z srcem</a></span> / <span><a href='/iskanje/?splosno_besede=ratato' title='8 zadetkov'>ratato</a></span> / <span><a href='/iskanje/?splosno_besede=paradiso' title='3 zadetki'>paradiso</a></span> / <span><a href='/iskanje/?splosno_besede=kroglice iy albert keksov' title='19 zadetkov'>kroglice iy albert keksov</a></span> / <span><a href='/iskanje/?splosno_besede=omaka iz brsticnega ohrovta' title='5 zadetkov'>omaka iz brsticnega ohrovta</a></span></p></aside><a href='/inc/ajax-funkcije.asp?akcija=receptirandom&id=18' class='ideja-recept'><aside id='ideja-recept'><p><span class='ideja'>ideja</span> za<br>sladkosnede</p></aside></a><div class='cf' id='oglasi-stranski'><div id="oglas-aside"><iframe id='banner6' name='banner6' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='300' height='250' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner6').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=6&kanal=recepti&kat=5&target=_blank&refresh=240&cb=0,6514651');});</script></div><div id="oglas-aside2"><iframe id='banner3' name='banner3' referrerpolicy='no-referrer-when-downgrade' frameborder='0' scrolling='no' width='300' height='250' allowtransparency='true'></iframe><script>$(document).ready(function() {$('#banner3').attr('src', 'https://oglasi2.kulinarika.net/www/delivery/afr.php?zoneid=3&kanal=recepti&kat=5&target=_blank&refresh=240&cb=0,6448289');});</script></div></div><aside class='ReceptiVroci cf'><h2><a href='/recepti/lestvica/?kat='>Najbolj vroči: november</a></h2><div class='mobileslider'><div class='vroci levo'><div class='slika'><a class='image-wrap ' href='/recepti/sladice/pecivo/potratna-rolada/22765/'><img alt='fotografija recepta' src='/grafika7/slika-se-nalaga-manjsa.png' data-src='/slikerecepti/22765/1-200x150.jpg' data-sizes='auto' data-srcset='/slikerecepti/22765/1-200x150.jpg 200w, /slikerecepti/22765/1-400x300.jpg 400w' class='lazyload'></a></div><a class="link single-line" href='/recepti/sladice/pecivo/potratna-rolada/22765/'>Potratna rolada</a></div><div class='vroci '><div class='slika'><a class='image-wrap ' href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/gobova-juha-s-krompirjem/13235/'><img alt='fotografija recepta' src='/grafika7/slika-se-nalaga-manjsa.png' data-src='/slikerecepti/13235/3-200x150.jpg' data-sizes='auto' data-srcset='/slikerecepti/13235/3-200x150.jpg 200w, /slikerecepti/13235/3-400x300.jpg 400w' class='lazyload'></a></div><a class="link single-line" href='/recepti/juhe-in-zakuhe/zelenjavne-juhe/gobova-juha-s-krompirjem/13235/'>Gobova juha s krompirjem</a></div><div class='vroci levo'><div class='slika'><a class='image-wrap ' href='/recepti/sladice/pecivo/cajno-pecivo-mignon/2032/'><img alt='fotografija recepta' src='/grafika7/slika-se-nalaga-manjsa.png' data-src='/slikerecepti/2032/4-200x150.jpg' data-sizes='auto' data-srcset='/slikerecepti/2032/4-200x150.jpg 200w, /slikerecepti/2032/4-400x300.jpg 400w' class='lazyload'></a></div><a class="link single-line" href='/recepti/sladice/pecivo/cajno-pecivo-mignon/2032/'>Čajno pecivo Mignon</a></div><div class='vroci '><div class='slika'><a class='image-wrap ' href='/recepti/sladice/pecivo/bela-limonina-pita/4543/'><img alt='fotografija recepta' src='/grafika7/slika-se-nalaga-manjsa.png' data-src='/slikerecepti/4543/13-200x150.jpg' data-sizes='auto' data-srcset='/slikerecepti/4543/13-200x150.jpg 200w, /slikerecepti/4543/13-400x300.jpg 400w' class='lazyload'></a></div><a class="link single-line" href='/recepti/sladice/pecivo/bela-limonina-pita/4543/'>Bela limonina pita</a></div><div class='vroci levo'><div class='slika'><a class='image-wrap ' href='/recepti/sladice/pecivo/trikrat-peceno-pecivo/13505/'><img alt='fotografija recepta' src='/grafika7/slika-se-nalaga-manjsa.png' data-src='/slikerecepti/13505/12-200x150.jpg' data-sizes='auto' data-srcset='/slikerecepti/13505/12-200x150.jpg 200w, /slikerecepti/13505/12-400x300.jpg 400w' class='lazyload'></a></div><a class="link single-line" href='/recepti/sladice/pecivo/trikrat-peceno-pecivo/13505/'>Trikrat pečeno pecivo</a></div><div class='vroci '><div class='slika'><a class='image-wrap ' href='/recepti/sladice/pecivo/marmorni-kolac/12221/'><img alt='fotografija recepta' src='/grafika7/slika-se-nalaga-manjsa.png' data-src='/slikerecepti/12221/14-200x150.jpg' data-sizes='auto' data-srcset='/slikerecepti/12221/14-200x150.jpg 200w, /slikerecepti/12221/14-400x300.jpg 400w' class='lazyload'></a></div><a class="link single-line" href='/recepti/sladice/pecivo/marmorni-kolac/12221/'>Marmorni kolač</a></div></div></aside><section id='forum_servis'><a href='/forum/' class='linki'><h2>Forumi <span>(vroče teme)</span></h2></a><table width='100%' class='single-line'><tr class='prva'><td><a href='/forumi/tema/16585/moj-vrt/'>MOJ vrt</a></td><td><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/trixi/'>Trixi</a></span></td></tr><tr class='druga'><td><a href='/forumi/tema/1096/kaj-jutri-za-kosilo-/'>Kaj jutri za kosilo?</a></td><td><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/mopsika/'>johana</a></span></td></tr><tr class='prva'><td><a href='/forumi/tema/7237/malo-za-hec/'>malo za hec</a></td><td><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/sijasaja/'>sijasaja</a></span></td></tr><tr class='druga'><td><a href='/forumi/tema/22350/kaj-danes-za-zajtrk/'>Kaj danes za zajtrk</a></td><td><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/mafita/'>mafita</a></span></td></tr><tr class='prva'><td><a href='/forumi/tema/5043/locevanje-zivil-90-dni-5-del/'>Ločevanje živil 90. dni - 5. del</a></td><td><span class='avtor'><img class='spol' src='/grafika6/ikona-spol-brez.png' title='uporabnik'><a class='username' href='/uporabniki/seznam/thau0383cy97hcr2/'>dočka</a></span></td></tr></table></section><div id='zid-include'></div><a href='/recepti/seznam/?video=1'><h2>Video recepti</h2></a><article class='enNajnovejsi videostranski'><a href='/recepti/sladice/pecivo/tiramisu/22535/'><div class='image-wrap video'><img data-src='/slikerecepti/22535/3-400x300.jpg' srcset='/slikerecepti/22535/3.jpg 400w' class='lazyload'></div><p class='ime single-line'>Tiramisu</p></a></article><article class='enNajnovejsi videostranski'><a href='/recepti/testenine/rebrasti-peresniki-s-pestom-iz-bazilike-buckami-in-buckinimi-cvetovi/22658/'><div class='image-wrap video'><img data-src='/slikerecepti/22658/2-400x300.jpg' srcset='/slikerecepti/22658/2.jpg 400w' class='lazyload'></div><p class='ime single-line'>Rebrasti peresniki s pestom iz bazilike, bučkami in bučkinimi cvetovi</p></a></article>
+
+
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkulinarika%2F&tabs=timeline&width=320&height=640&small_header=true&adapt_container_width=true&lazy=true&hide_cover=false&show_facepile=true&appId=182018238801081" width="100%" height="640" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+
+
+	  
+
+	  <!-- InstanceEndEditable -->
+</section>
+</main>
+</div>
+<div class="push"></div>
+</div>
+
+
+
+<footer class="footer cf">
+
+<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    	<div class="img_wrap"><img alt="prazno" src="/images/prazno.jpg"></div>
+	    	<div class="txt_wrap">
+	    		<h3>Zaznan je blokator oglasov</h3>
+				<p>Vsebina Kulinarika.net je podprta z oglaševanjem. Če želite še naprej uživati v naših receptih, izklopite blokiranje oglasov.</p>
+				<h4>Prosimo vas, da za našo spletno stran onemogočite blokiranje oglasov.</h4>
+				<!-- <p>Onemogoči blokiranje oglasov<p> -->
+				<a href="javascript:void(0);" class="close_modal">Nadaljujte z blokiranjem oglasov</a>
+			</div>
+	  </div>
+
+	</div>
+
+    <div id="footer-top">
+      
+    </div>
+	<div class="cf" id="footer-main">
+	<p>&copy; 2022 Spletna kulinarika d.o.o.</p>
+	<ul>
+    
+		<li><a href="/oglasevanje/">Trženje</a></li>	
+		<li><a href="/pravo/">Pogoji uporabe</a></li>
+		<li><a href="/zasebnost/">Zasebnost</a></li>
+		
+   		<li><a href="/faq/">Pomoč</a></li>
+        <li><a href="/zanimivo/dogodki/">Dogodki</a></li>
+        
+		<li><a href="/uporabniki/seznam/">Člani</a></li>
+	</ul>
+</div>
+
+  
+</footer>
+
+<script>
+<!--//<![CDATA[
+if (isMobile == true) {
+var ox_u = 'https://oglasi2.kulinarika.net/www/delivery/al.php?zoneid=24&layerstyle=simple&align=left&valign=top&padding=0&padding=0&shifth=0&shiftv=0&closebutton=t&nobg=t&noborder=t';
+if (document.context) ox_u += '&context=' + escape(document.context);
+document.write("<scr"+"ipt src='" + ox_u +"'></scr"+"ipt>");
+}
+//]]>--></script>
+
+</div>
+
+<!-- InstanceBeginEditable name="dno" -->
+ 
+<!-- InstanceEndEditable -->
+<a href='#0' class='cd-top' title='na vrh'>&uarr;</a>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,5 +1,5 @@
 # Projekt
-Pri predmetu Programiranje 1 bom za projekt analizirala podatke z Okusno.je. Zbrala bom podatke receptov iz kategorij:
+Pri predmetu Programiranje 1 bom za projekt analizirala podatke s strani Kulinarika.net. Zbrala bom podatke receptov iz kategorij:
 - Juhe
 - Mesne jedi
 - Zelenjavne jedi
