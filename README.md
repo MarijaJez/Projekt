@@ -7,15 +7,15 @@ Pri predmetu Programiranje 1 bom za projekt analizirala podatke s strani Kulinar
 - Solate
 - Sladice in peciva
 
-Zajela bompodatke o:
+Zajela bom podatke o:
 - imenu jedi,
 - avtorju recepta
 - oceni jedi,
-- zahtevnosti priprave,
 - potrebnem času za pripravo,
 - sestavinah,
 - navodilih za pripravo.
 
 Delovne hipoteze:
-- Kakšna je povezava med zahtevnostjo priprave in dolžino navodil in časom priprave in številom različnih sestavin?
-- Jedi s katereimi sestsvinami imajo najboljše ocene?
+- Kakšna je povezava med zahtevnostjo priprave in dolžino navodil, časom priprave ter številom različnih sestavin?
+- Jedi s katereimi sestavinami imajo najboljše ocene?
+- Z uporabo naivnega Bayesovega klasifikatorja poskusim iz sestavin napovedati kategorijo jedi.
