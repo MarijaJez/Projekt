@@ -17,5 +17,4 @@ Zajela bom podatke o:
 
 Delovne hipoteze:
 - Kakšna je povezava med zahtevnostjo priprave in dolžino navodil, časom priprave ter številom različnih sestavin?
-- Jedi s katereimi sestavinami imajo najboljše ocene?
 - Z uporabo naivnega Bayesovega klasifikatorja poskusim iz sestavin napovedati kategorijo jedi.
